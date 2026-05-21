@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Everoxus — Trusted Amazon Picks for Pet Owners</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1a2340;
+    --cream: #f7f4ee;
+    --warm-white: #fdfcfa;
+    --accent: #c8a96e;
+    --text: #2c2c2c;
+    --muted: #6b6b6b;
+    --light-border: #e8e3da;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--warm-white);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* HEADER */
+  header {
+    background: var(--navy);
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cream);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  }
+
+  .logo span {
+    color: var(--accent);
+  }
+
+  nav a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-left: 32px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+
+  nav a:hover { opacity: 1; }
+
+  /* HERO */
+  .hero {
+    background: var(--navy);
+    padding: 80px 40px 90px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.3;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1.2;
+    max-width: 680px;
+    margin: 0 auto 20px;
+  }
+
+  .hero p {
+    color: rgba(247,244,238,0.7);
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto 36px;
+    font-weight: 300;
+  }
+
+  .ad-disclosure {
+    display: inline-block;
+    font-size: 0.72rem;
+    color: rgba(247,244,238,0.4);
+    letter-spacing: 0.06em;
+    border: 1px solid rgba(247,244,238,0.15);
+    padding: 5px 14px;
+    border-radius: 20px;
+  }
+
+  /* SECTION STRUCTURE */
+  .section {
+    padding: 70px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    line-height: 1.25;
+  }
+
+  .section-sub {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 48px;
+    font-weight: 300;
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--light-border);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* PRODUCT GRID */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+
+  .product-card {
+    background: var(--cream);
+    border: 1px solid var(--light-border);
+    border-radius: 4px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(26,35,64,0.08);
+  }
+
+  .product-category {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+    line-height: 1.35;
+  }
+
+  .product-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 20px;
+    flex: 1;
+    font-weight: 300;
+  }
+
+  .product-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .stars {
+    font-size: 0.8rem;
+    color: var(--accent);
+    letter-spacing: 1px;
+  }
+
+  .review-count {
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--navy);
+    color: var(--cream);
+    padding: 3px 9px;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+
+  .btn-amazon {
+    display: block;
+    text-align: center;
+    background: var(--navy);
+    color: var(--cream);
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 3px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background 0.2s;
+  }
+
+  .btn-amazon:hover {
+    background: var(--accent);
+    color: var(--navy);
+  }
+
+  /* ARTICLE SECTION */
+  .article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+
+  .article-card {
+    border-bottom: 2px solid var(--light-border);
+    padding-bottom: 28px;
+    transition: border-color 0.2s;
+  }
+
+  .article-card:hover {
+    border-color: var(--accent);
+  }
+
+  .article-tag {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+    line-height: 1.35;
+    cursor: pointer;
+  }
+
+  .article-excerpt {
+    font-size: 0.87rem;
+    color: var(--muted);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  /* HOME ORG SECTION */
+  .home-org {
+    background: var(--cream);
+    padding: 70px 40px;
+    border-top: 1px solid var(--light-border);
+    border-bottom: 1px solid var(--light-border);
+  }
+
+  .home-org-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy);
+    padding: 48px 40px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 16px;
+    letter-spacing: 0.04em;
+  }
+
+  .footer-logo span { color: var(--accent); }
+
+  .footer-text {
+    font-size: 0.8rem;
+    color: rgba(247,244,238,0.45);
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .footer-links {
+    margin: 20px 0;
+  }
+
+  .footer-links a {
+    color: rgba(247,244,238,0.5);
+    text-decoration: none;
+    font-size: 0.78rem;
+    margin: 0 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--accent); }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    header { padding: 0 20px; }
+    nav { display: none; }
+    .hero { padding: 60px 20px 70px; }
+    .section { padding: 50px 20px; }
+    .home-org { padding: 50px 20px; }
+    footer { padding: 40px 20px; }
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero h1 { animation: fadeUp 0.7s ease both; }
+  .hero p { animation: fadeUp 0.7s 0.15s ease both; }
+  .hero .ad-disclosure { animation: fadeUp 0.7s 0.3s ease both; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="#" class="logo">EVER<span>OXUS</span></a>
+  <nav>
+    <a href="#dog-essentials">Dog Essentials</a>
+    <a href="#puppy">Puppy</a>
+    <a href="#guides">Guides</a>
+    <a href="#home-org">Home</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-eyebrow">Trusted Amazon Picks</p>
+  <h1>Products Your Dog Will Actually Use</h1>
+  <p>Every product hand-picked. Minimum 4.4 stars, 1,000+ reviews. No guesswork.</p>
+  <span class="ad-disclosure">#ad · affiliate links · we earn a small commission at no cost to you</span>
+</div>
+
+<!-- DOG ESSENTIALS -->
+<div class="section" id="dog-essentials">
+  <p class="section-label">Category</p>
+  <h2 class="section-title">Dog Essentials</h2>
+  <p class="section-sub">The everyday products dog owners come back to again and again.</p>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <p class="product-category">Carrier</p>
+      <h3 class="product-name">Dog Carrier Sling</h3>
+      <p class="product-desc">Hands-free sling carrier for small dogs. Adjustable strap, soft and secure. Perfect for walks, travel, and errands.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">4,800+ reviews</span>
+        <span class="badge">Amazon's Choice</span>
+      </div>
+      <a href="https://amzn.to/4duXc9W" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+    <div class="product-card">
+      <p class="product-category">Car Safety</p>
+      <h3 class="product-name">BWOGUE Dog Seat Belt</h3>
+      <p class="product-desc">Adjustable dog seat belt harness. Clips directly to your car's seatbelt buckle. Keeps your dog safe and secure on every journey.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">4,200+ reviews</span>
+        <span class="badge">Amazon's Choice</span>
+      </div>
+      <a href="https://amzn.to/4ncBhYq" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+    <div class="product-card">
+      <p class="product-category">Feeding</p>
+      <h3 class="product-name">Zenify Slow Feeder Bowl</h3>
+      <p class="product-desc">Reduces bloating, choking and digestive issues. Puzzle design keeps dogs engaged at mealtime. Vet recommended.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">6,500+ reviews</span>
+        <span class="badge">Amazon's Choice</span>
+      </div>
+      <a href="https://amzn.to/4u2iHF6" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+    <div class="product-card">
+      <p class="product-category">Feeding</p>
+      <h3 class="product-name">Amazon Basics Dog Bowl Mat</h3>
+      <p class="product-desc">Waterproof silicone mat catches spills and scattered kibble. Non-slip base. Keeps your floors clean at every mealtime.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">12,000+ reviews</span>
+        <span class="badge">Amazon's Choice</span>
+      </div>
+      <a href="https://amzn.to/4f8TUdL" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+    <div class="product-card">
+      <p class="product-category">Toys</p>
+      <h3 class="product-name">Multipet Lamb Chop Squeaker Toy</h3>
+      <p class="product-desc">A dog favourite for decades. Soft, plush and perfectly sized for cuddling and play. Dogs never want to put it down.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">32,000+ reviews</span>
+        <span class="badge">Amazon's Choice</span>
+      </div>
+      <a href="https://amzn.to/4tq01hj" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+    <div class="product-card">
+      <p class="product-category">Grooming</p>
+      <h3 class="product-name">Pogi's Dog Wipes</h3>
+      <p class="product-desc">Thick, fragrance-free wipes for paws, ears and coat. Gentle enough for daily use. Keep your dog clean between baths.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">28,000+ reviews</span>
+        <span class="badge">Amazon's Choice</span>
+      </div>
+      <a href="https://amzn.to/3PGu9Y2" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+    <div class="product-card">
+      <p class="product-category">Toys</p>
+      <h3 class="product-name">KONG Goodie Bone</h3>
+      <p class="product-desc">Natural rubber chew toy that keeps dogs mentally engaged for hours. Fill with treats for extra stimulation. Built to last.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">17,000+ reviews</span>
+        <span class="badge">Amazon's Choice</span>
+      </div>
+      <a href="https://amzn.to/4wxARQz" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+    <div class="product-card">
+      <p class="product-category">Walking</p>
+      <h3 class="product-name">Earth Rated Poop Bags</h3>
+      <p class="product-desc">Extra thick, leak-proof and lavender-scented. Makes every walk stress-free. The most reviewed poop bag on Amazon.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">47,000+ reviews</span>
+        <span class="badge">Amazon's Choice</span>
+      </div>
+      <a href="https://amzn.to/49UwRzZ" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- PUPPY SECTION -->
+<div class="section" id="puppy">
+  <p class="section-label">Category</p>
+  <h2 class="section-title">Puppy Training</h2>
+  <p class="section-sub">Everything you need to get your puppy started right.</p>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <p class="product-category">Training</p>
+      <h3 class="product-name">Super Absorbent Washable Pee Pads</h3>
+      <p class="product-desc">Reusable and washable. Super absorbent with non-slip backing. Better for the environment and your wallet long-term.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">1,000+ reviews</span>
+        <span class="badge">Top Rated</span>
+      </div>
+      <a href="https://amzn.to/4rTxd04" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+    <div class="product-card">
+      <p class="product-category">Containment</p>
+      <h3 class="product-name">X-ZONE Portable Pet Playpen</h3>
+      <p class="product-desc">Foldable and portable playpen for puppies. Set up in seconds. Keeps your puppy safe while you're busy.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">1,000+ reviews</span>
+        <span class="badge">Top Rated</span>
+      </div>
+      <a href="https://amzn.to/3PZleAD" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+    <div class="product-card">
+      <p class="product-category">Hygiene</p>
+      <h3 class="product-name">CuteBone Female Dog Diapers</h3>
+      <p class="product-desc">Washable and reusable dog nappies. Comfortable fit with adjustable waistband. Ideal for puppies in training.</p>
+      <div class="product-meta">
+        <span class="stars">★★★★★</span>
+        <span class="review-count">1,000+ reviews</span>
+        <span class="badge">Top Rated</span>
+      </div>
+      <a href="https://amzn.to/47qnPtw" class="btn-amazon">View on Amazon →</a>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- GUIDES / ARTICLES -->
+<div class="section" id="guides">
+  <p class="section-label">Guides</p>
+  <h2 class="section-title">Dog Owner Guides</h2>
+  <p class="section-sub">Honest, practical advice. Coming soon as we build out our content library.</p>
+
+  <div class="article-grid">
+
+    <div class="article-card">
+      <p class="article-tag">Feeding</p>
+      <a href="everoxus/slow-feeder-bowl-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">The Best Slow Feeder Bowls for Dogs — What Actually Works</h3></a>
+      <p class="article-excerpt">Does your dog inhale their food in seconds? Slow feeder bowls can reduce bloating and digestive issues. Here's what to look for and our top picks on Amazon.</p>
+    </div>
+
+    <div class="article-card">
+      <p class="article-tag">Training</p>
+      <h3 class="article-title">Puppy Potty Training — The Products That Make It Easier</h3>
+      <p class="article-excerpt">Potty training a puppy is stressful enough without the wrong gear. We break down the best pee pads, playpens and training aids available on Amazon right now.</p>
+    </div>
+
+    <div class="article-card">
+      <p class="article-tag">Car Travel</p>
+      <h3 class="article-title">How to Keep Your Dog Safe in the Car — A Simple Guide</h3>
+      <p class="article-excerpt">An unrestrained dog in a moving vehicle is a safety risk for everyone. Here's what you actually need and what's worth skipping.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- HOME ORGANISATION -->
+<div class="home-org" id="home-org">
+  <div class="home-org-inner">
+    <p class="section-label">Also on Everoxus</p>
+    <h2 class="section-title">Home Organisation</h2>
+    <p class="section-sub">Kitchen, pantry, and meal prep picks. Highly rated, Prime eligible, under $75.</p>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <p class="product-category">Pantry</p>
+        <h3 class="product-name">SONGMICS Cabinet Organiser Shelf</h3>
+        <p class="product-desc">Double your shelf space instantly. Sturdy steel construction. Perfect for pantry, kitchen cabinets and bathroom storage.</p>
+        <div class="product-meta">
+          <span class="stars">★★★★★</span>
+          <span class="review-count">Top Rated</span>
+        </div>
+        <a href="https://amzn.to/4tbwuZb" class="btn-amazon">View on Amazon →</a>
+      </div>
+
+      <div class="product-card">
+        <p class="product-category">Meal Prep</p>
+        <h3 class="product-name">MCIRCO Meal Prep Containers</h3>
+        <p class="product-desc">Leak-proof, microwave and dishwasher safe. Portion-controlled compartments make weekly meal prep simple and organised.</p>
+        <div class="product-meta">
+          <span class="stars">★★★★★</span>
+          <span class="review-count">Top Rated</span>
+        </div>
+        <a href="https://amzn.to/3RKerM4" class="btn-amazon">View on Amazon →</a>
+      </div>
+
+      <div class="product-card">
+        <p class="product-category">Fridge</p>
+        <h3 class="product-name">Vtopmart Fridge Organiser Bins</h3>
+        <p class="product-desc">Stackable, clear bins that transform a cluttered fridge into a clean, organised space. Easy to clean and built to last.</p>
+        <div class="product-meta">
+          <span class="stars">★★★★★</span>
+          <span class="review-count">Top Rated</span>
+        </div>
+        <a href="https://amzn.to/498X8dz" class="btn-amazon">View on Amazon →</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">EVER<span>OXUS</span></div>
+  <div class="footer-links">
+    <a href="#dog-essentials">Dog Essentials</a>
+    <a href="#puppy">Puppy</a>
+    <a href="#home-org">Home</a>
+  </div>
+  <p class="footer-text">#ad · Everoxus is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.au. We earn a small commission at no extra cost to you.</p>
+</footer>
+
+</body>
+</html>
