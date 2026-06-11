@@ -12,7 +12,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-QMT31L3V3V');
 </script>
 <meta charset="UTF-8">
@@ -29,365 +28,56 @@
     --muted: #6b6b6b;
     --light-border: #e8e3da;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--warm-white);
-    color: var(--text);
-    font-size: 16px;
-    line-height: 1.7;
-  }
-
-  /* HEADER */
-  header {
-    background: var(--navy);
-    padding: 0 40px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 68px;
-  }
-
-  .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--cream);
-    letter-spacing: 0.04em;
-    text-decoration: none;
-  }
-
-  .logo span {
-    color: var(--accent);
-  }
-
-  nav a {
-    color: var(--cream);
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-left: 32px;
-    opacity: 0.85;
-    transition: opacity 0.2s;
-  }
-
+  body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--text); font-size: 16px; line-height: 1.7; }
+  header { background: var(--navy); padding: 0 40px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--cream); letter-spacing: 0.04em; text-decoration: none; }
+  .logo span { color: var(--accent); }
+  nav a { color: var(--cream); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-left: 32px; opacity: 0.85; transition: opacity 0.2s; }
   nav a:hover { opacity: 1; }
-
-  /* HERO */
-  .hero {
-    background: var(--navy);
-    padding: 80px 40px 90px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: var(--accent);
-    opacity: 0.3;
-  }
-
-  .hero-eyebrow {
-    font-size: 0.75rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2.2rem, 5vw, 3.4rem);
-    font-weight: 700;
-    color: var(--cream);
-    line-height: 1.2;
-    max-width: 680px;
-    margin: 0 auto 20px;
-  }
-
-  .hero p {
-    color: rgba(247,244,238,0.7);
-    font-size: 1rem;
-    max-width: 480px;
-    margin: 0 auto 36px;
-    font-weight: 300;
-  }
-
-  .ad-disclosure {
-    display: inline-block;
-    font-size: 0.72rem;
-    color: rgba(247,244,238,0.4);
-    letter-spacing: 0.06em;
-    border: 1px solid rgba(247,244,238,0.15);
-    padding: 5px 14px;
-    border-radius: 20px;
-  }
-
-  /* SECTION STRUCTURE */
-  .section {
-    padding: 70px 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .section-label {
-    font-size: 0.72rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 8px;
-    line-height: 1.25;
-  }
-
-  .section-sub {
-    color: var(--muted);
-    font-size: 0.95rem;
-    margin-bottom: 48px;
-    font-weight: 300;
-  }
-
-  .divider {
-    height: 1px;
-    background: var(--light-border);
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  /* PRODUCT GRID */
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 24px;
-  }
-
-  .product-card {
-    background: var(--cream);
-    border: 1px solid var(--light-border);
-    border-radius: 4px;
-    padding: 28px;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .product-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 32px rgba(26,35,64,0.08);
-  }
-
-  .product-category {
-    font-size: 0.68rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-
-  .product-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--navy);
-    margin-bottom: 10px;
-    line-height: 1.35;
-  }
-
-  .product-desc {
-    font-size: 0.88rem;
-    color: var(--muted);
-    line-height: 1.65;
-    margin-bottom: 20px;
-    flex: 1;
-    font-weight: 300;
-  }
-
-  .product-meta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 18px;
-  }
-
-  .stars {
-    font-size: 0.8rem;
-    color: var(--accent);
-    letter-spacing: 1px;
-  }
-
-  .review-count {
-    font-size: 0.78rem;
-    color: var(--muted);
-  }
-
-  .badge {
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    background: var(--navy);
-    color: var(--cream);
-    padding: 3px 9px;
-    border-radius: 2px;
-    font-weight: 500;
-  }
-
-  .btn-amazon {
-    display: block;
-    text-align: center;
-    background: var(--navy);
-    color: var(--cream);
-    text-decoration: none;
-    padding: 13px 20px;
-    border-radius: 3px;
-    font-size: 0.82rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    transition: background 0.2s;
-  }
-
-  .btn-amazon:hover {
-    background: var(--accent);
-    color: var(--navy);
-  }
-
-  /* ARTICLE SECTION */
-  .article-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
-  }
-
-  .article-card {
-    border-bottom: 2px solid var(--light-border);
-    padding-bottom: 28px;
-    transition: border-color 0.2s;
-  }
-
-  .article-card:hover {
-    border-color: var(--accent);
-  }
-
-  .article-tag {
-    font-size: 0.68rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-
-  .article-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: var(--navy);
-    margin-bottom: 10px;
-    line-height: 1.35;
-    cursor: pointer;
-  }
-
-  .article-excerpt {
-    font-size: 0.87rem;
-    color: var(--muted);
-    line-height: 1.65;
-    font-weight: 300;
-  }
-
-  /* HOME ORG SECTION */
-  .home-org {
-    background: var(--cream);
-    padding: 70px 40px;
-    border-top: 1px solid var(--light-border);
-    border-bottom: 1px solid var(--light-border);
-  }
-
-  .home-org-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  /* FOOTER */
-  footer {
-    background: var(--navy);
-    padding: 48px 40px;
-    text-align: center;
-  }
-
-  .footer-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--cream);
-    margin-bottom: 16px;
-    letter-spacing: 0.04em;
-  }
-
+  .hero { background: var(--navy); padding: 80px 40px 90px; text-align: center; position: relative; overflow: hidden; }
+  .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: var(--accent); opacity: 0.3; }
+  .hero-eyebrow { font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; font-weight: 500; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 700; color: var(--cream); line-height: 1.2; max-width: 680px; margin: 0 auto 20px; }
+  .hero p { color: rgba(247,244,238,0.7); font-size: 1rem; max-width: 480px; margin: 0 auto 36px; font-weight: 300; }
+  .ad-disclosure { display: inline-block; font-size: 0.72rem; color: rgba(247,244,238,0.4); letter-spacing: 0.06em; border: 1px solid rgba(247,244,238,0.15); padding: 5px 14px; border-radius: 20px; }
+  .section { padding: 70px 40px; max-width: 1100px; margin: 0 auto; }
+  .section-label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 10px; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; color: var(--navy); margin-bottom: 8px; line-height: 1.25; }
+  .section-sub { color: var(--muted); font-size: 0.95rem; margin-bottom: 48px; font-weight: 300; }
+  .section-footer { margin-top: 40px; text-align: center; }
+  .btn-browse { display: inline-block; border: 1.5px solid var(--navy); color: var(--navy); text-decoration: none; padding: 13px 32px; border-radius: 3px; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: background 0.2s, color 0.2s; }
+  .btn-browse:hover { background: var(--navy); color: var(--cream); }
+  .divider { height: 1px; background: var(--light-border); max-width: 1100px; margin: 0 auto; }
+  .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+  .product-card { background: var(--cream); border: 1px solid var(--light-border); border-radius: 4px; padding: 28px; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; }
+  .product-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,35,64,0.08); }
+  .product-category { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 10px; }
+  .product-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.35; }
+  .product-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; margin-bottom: 20px; flex: 1; font-weight: 300; }
+  .product-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+  .stars { font-size: 0.8rem; color: var(--accent); letter-spacing: 1px; }
+  .review-count { font-size: 0.78rem; color: var(--muted); }
+  .badge { font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase; background: var(--navy); color: var(--cream); padding: 3px 9px; border-radius: 2px; font-weight: 500; }
+  .btn-amazon { display: block; text-align: center; background: var(--navy); color: var(--cream); text-decoration: none; padding: 13px 20px; border-radius: 3px; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: background 0.2s; }
+  .btn-amazon:hover { background: var(--accent); color: var(--navy); }
+  .article-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+  .article-card { border-bottom: 2px solid var(--light-border); padding-bottom: 28px; transition: border-color 0.2s; }
+  .article-card:hover { border-color: var(--accent); }
+  .article-tag { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 10px; }
+  .article-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.35; cursor: pointer; }
+  .article-excerpt { font-size: 0.87rem; color: var(--muted); line-height: 1.65; font-weight: 300; }
+  .home-org { background: var(--cream); padding: 70px 40px; border-top: 1px solid var(--light-border); border-bottom: 1px solid var(--light-border); }
+  .home-org-inner { max-width: 1100px; margin: 0 auto; }
+  footer { background: var(--navy); padding: 48px 40px; text-align: center; }
+  .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--cream); margin-bottom: 16px; letter-spacing: 0.04em; }
   .footer-logo span { color: var(--accent); }
-
-  .footer-text {
-    font-size: 0.8rem;
-    color: rgba(247,244,238,0.45);
-    max-width: 480px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .footer-links {
-    margin: 20px 0;
-  }
-
-  .footer-links a {
-    color: rgba(247,244,238,0.5);
-    text-decoration: none;
-    font-size: 0.78rem;
-    margin: 0 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-
+  .footer-text { font-size: 0.8rem; color: rgba(247,244,238,0.45); max-width: 480px; margin: 0 auto; line-height: 1.7; }
+  .footer-links { margin: 20px 0; }
+  .footer-links a { color: rgba(247,244,238,0.5); text-decoration: none; font-size: 0.78rem; margin: 0 12px; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
   .footer-links a:hover { color: var(--accent); }
-
-  /* RESPONSIVE */
-  @media (max-width: 768px) {
-    header { padding: 0 20px; }
-    nav { display: none; }
-    .hero { padding: 60px 20px 70px; }
-    .section { padding: 50px 20px; }
-    .home-org { padding: 50px 20px; }
-    footer { padding: 40px 20px; }
-  }
-
-  /* ANIMATIONS */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
+  @media (max-width: 768px) { header { padding: 0 20px; } nav { display: none; } .hero { padding: 60px 20px 70px; } .section { padding: 50px 20px; } .home-org { padding: 50px 20px; } footer { padding: 40px 20px; } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   .hero h1 { animation: fadeUp 0.7s ease both; }
   .hero p { animation: fadeUp 0.7s 0.15s ease both; }
   .hero .ad-disclosure { animation: fadeUp 0.7s 0.3s ease both; }
@@ -406,12 +96,13 @@
 
 <!-- HEADER -->
 <header>
-  <a href="#" class="logo">EVER<span>OXUS</span></a>
+  <a href="index.html" class="logo">EVER<span>OXUS</span></a>
   <nav>
     <a href="#dog-essentials">Dog Essentials</a>
     <a href="#puppy">Puppy</a>
     <a href="#guides">Guides</a>
     <a href="#home-org">Home</a>
+    <a href="all-products.html">All Products</a>
   </nav>
 </header>
 
@@ -432,51 +123,51 @@
   <div class="product-grid">
 
     <div class="product-card">
-      <p class="product-category">Carrier</p>
-      <h3 class="product-name">Dog Carrier Sling</h3>
-      <p class="product-desc">Hands-free sling carrier for small dogs. Adjustable strap, soft and secure. Perfect for walks, travel, and errands.</p>
+      <p class="product-category">Grooming</p>
+      <h3 class="product-name">ACE2ACE Pet Hair Remover</h3>
+      <p class="product-desc">Reusable self-cleaning roller removes pet hair from furniture, sofas and bedding. No batteries or sticky sheets needed.</p>
       <div class="product-meta">
-        <span class="stars">★★★★★</span>
-        <span class="review-count">4,800+ reviews</span>
+        <span class="stars">★★★★</span>
+        <span class="review-count">98,493+ reviews</span>
         <span class="badge">Amazon's Choice</span>
       </div>
-      <a href="https://amzn.to/4eeTEYL" class="btn-amazon">View on Amazon →</a>
+      <a href="https://amzn.to/4e9jqgV" class="btn-amazon">View on Amazon →</a>
     </div>
 
     <div class="product-card">
-      <p class="product-category">Car Safety</p>
-      <h3 class="product-name">BWOGUE Dog Seat Belt</h3>
-      <p class="product-desc">Adjustable dog seat belt harness. Clips directly to your car's seatbelt buckle. Keeps your dog safe and secure on every journey.</p>
+      <p class="product-category">Toys</p>
+      <h3 class="product-name">KONG Classic Dog Toy</h3>
+      <p class="product-desc">The original stuffable rubber toy. Fill with treats or peanut butter to keep dogs entertained for hours. Built to last.</p>
       <div class="product-meta">
-        <span class="stars">★★★★★</span>
-        <span class="review-count">4,200+ reviews</span>
-        <span class="badge">Amazon's Choice</span>
+        <span class="stars">★★★★</span>
+        <span class="review-count">88,410+ reviews</span>
+        <span class="badge">Top Rated</span>
       </div>
-      <a href="https://amzn.to/43pO6FS" class="btn-amazon">View on Amazon →</a>
+      <a href="https://amzn.to/4ohgio5" class="btn-amazon">View on Amazon →</a>
     </div>
 
     <div class="product-card">
-      <p class="product-category">Feeding</p>
-      <h3 class="product-name">Zenify Slow Feeder Bowl</h3>
-      <p class="product-desc">Reduces bloating, choking and digestive issues. Puzzle design keeps dogs engaged at mealtime. Vet recommended.</p>
+      <p class="product-category">Grooming</p>
+      <h3 class="product-name">DakPets Deshedding Dog Brush</h3>
+      <p class="product-desc">Removes up to 95% of loose hair and reduces shedding. Works on short and long coats. Ergonomic non-slip handle.</p>
       <div class="product-meta">
-        <span class="stars">★★★★★</span>
-        <span class="review-count">6,500+ reviews</span>
+        <span class="stars">★★★★</span>
+        <span class="review-count">52,388+ reviews</span>
         <span class="badge">Amazon's Choice</span>
       </div>
-      <a href="https://amzn.to/4upI9Ug" class="btn-amazon">View on Amazon →</a>
+      <a href="https://amzn.to/4uugTnU" class="btn-amazon">View on Amazon →</a>
     </div>
 
     <div class="product-card">
-      <p class="product-category">Feeding</p>
-      <h3 class="product-name">Amazon Basics Dog Bowl Mat</h3>
-      <p class="product-desc">Waterproof silicone mat catches spills and scattered kibble. Non-slip base. Keeps your floors clean at every mealtime.</p>
+      <p class="product-category">Walking</p>
+      <h3 class="product-name">Earth Rated Poop Bags</h3>
+      <p class="product-desc">Extra thick, leak-proof and lavender-scented. Makes every walk stress-free. The most reviewed poop bag on Amazon.</p>
       <div class="product-meta">
         <span class="stars">★★★★★</span>
-        <span class="review-count">12,000+ reviews</span>
+        <span class="review-count">47,000+ reviews</span>
         <span class="badge">Amazon's Choice</span>
       </div>
-      <a href="https://amzn.to/4gcuhcx" class="btn-amazon">View on Amazon →</a>
+      <a href="https://amzn.to/4x7VK5x" class="btn-amazon">View on Amazon →</a>
     </div>
 
     <div class="product-card">
@@ -504,45 +195,9 @@
     </div>
 
     <div class="product-card">
-      <p class="product-category">Toys</p>
-      <h3 class="product-name">KONG Goodie Bone</h3>
-      <p class="product-desc">Natural rubber chew toy that keeps dogs mentally engaged for hours. Fill with treats for extra stimulation. Built to last.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★★</span>
-        <span class="review-count">17,000+ reviews</span>
-        <span class="badge">Amazon's Choice</span>
-      </div>
-      <a href="https://amzn.to/4wxARQz" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Earth Rated Poop Bags</h3>
-      <p class="product-desc">Extra thick, leak-proof and lavender-scented. Makes every walk stress-free. The most reviewed poop bag on Amazon.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★★</span>
-        <span class="review-count">47,000+ reviews</span>
-        <span class="badge">Amazon's Choice</span>
-      </div>
-      <a href="https://amzn.to/4x7VK5x" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-<div class="product-card">
-      <p class="product-category">Training</p>
-      <h3 class="product-name">PET N PET Dog Treat Pouch</h3>
-      <p class="product-desc">Hands-free treat pouch with built-in poop bag dispenser. 3 ways to wear. Perfect for training walks.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">1,388+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4uoUGY0" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
       <p class="product-category">Training</p>
       <h3 class="product-name">Luckyiren Dog Door Bells</h3>
-      <p class="product-desc">Hang on any door knob and teach your dog to ring when they need to go outside. Simple and effective potty training tool.</p>
+      <p class="product-desc">Hang on any door knob and teach your dog to ring when they need to go outside. Simple and effective training tool.</p>
       <div class="product-meta">
         <span class="stars">★★★★</span>
         <span class="review-count">23,362+ reviews</span>
@@ -553,100 +208,20 @@
 
     <div class="product-card">
       <p class="product-category">Grooming</p>
-      <h3 class="product-name">Palmer's Paw Pad & Nose Balm</h3>
-      <p class="product-desc">Fragrance-free cocoa butter balm softens rough, dry paw pads and nose. Safe for daily use. Made with Vitamin E.</p>
+      <h3 class="product-name">FURminator Deshedding Tool for Dogs</h3>
+      <p class="product-desc">Reaches through topcoat to remove loose undercoat hair before it sheds. Stainless steel edge and FURejector button. Over 22,000 reviews.</p>
       <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">5,900+ reviews</span>
-        <span class="badge">Top Rated</span>
+        <span class="stars">★★★★★</span>
+        <span class="review-count">22,247+ reviews</span>
+        <span class="badge">Amazon's Choice</span>
       </div>
-      <a href="https://amzn.to/443FHbe" class="btn-amazon">View on Amazon →</a>
+      <a href="https://amzn.to/3S4fxm6" class="btn-amazon">View on Amazon →</a>
     </div>
 
-    <div class="product-card">
-      <p class="product-category">Toys</p>
-      <h3 class="product-name">Dog Puzzle Toy — Food Feeder</h3>
-      <p class="product-desc">Interactive puzzle feeder for IQ training and mental stimulation. Sliding compartments hide treats for your dog to find.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">15,600+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4ofXaXj" class="btn-amazon">View on Amazon →</a>
-    </div>
+  </div>
 
-    <div class="product-card">
-      <p class="product-category">Treats</p>
-      <h3 class="product-name">Vital Essentials Freeze Dried Treats</h3>
-      <p class="product-desc">Single ingredient raw beef liver treats. No fillers, no additives. Perfect for training and rewarding good behaviour.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">6,200+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4aDyXEG" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Dental</p>
-      <h3 class="product-name">Arm & Hammer Dog Dental Kit</h3>
-      <p class="product-desc">Complete tartar control kit with toothpaste, toothbrush and finger brush. Baking soda formula fights plaque and bad breath.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">8,112+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/3QuGAXm" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Mini Lint Roller — 5 Pack</h3>
-      <p class="product-desc">Extra sticky lint rollers for pet hair on clothes, sofas and car seats. Travel size — keep one everywhere.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">7,000+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4e0B0oI" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Anxiety & Enrichment</p>
-      <h3 class="product-name">Honomastry Lick Mat — 2 Pack</h3>
-      <p class="product-desc">Premium silicone lick mat with suction cups. Calms anxious dogs, slows fast eaters, keeps bored dogs occupied.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">3,400+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4v3U7nV" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Earth Rated Dog Wipes</h3>
-      <p class="product-desc">Large, thick lavender-scented wipes for paws and coat. Plant-based ingredients, free from parabens and alcohol.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">32,159+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/3RZeK63" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Pet MD Dog Ear Cleaner Wipes</h3>
-      <p class="product-desc">Vet recommended ear cleaning wipes. Removes wax and debris, reduces itching and odour. Gentle aloe vera formula.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">60,031+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4gbT2pj" class="btn-amazon">View on Amazon →</a>
-    </div>
-
+  <div class="section-footer">
+    <a href="all-products.html#dog-essentials" class="btn-browse">Browse All Dog Products →</a>
   </div>
 </div>
 
@@ -685,30 +260,6 @@
     </div>
 
     <div class="product-card">
-      <p class="product-category">Hygiene</p>
-      <h3 class="product-name">CuteBone Female Dog Diapers</h3>
-      <p class="product-desc">Washable and reusable dog nappies. Comfortable fit with adjustable waistband. Ideal for puppies in training.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★★</span>
-        <span class="review-count">1,000+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/47qnPtw" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-	<div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Oneisall Dog Clippers</h3>
-      <p class="product-desc">Quiet, low-vibration dog clippers for home grooming. Cordless, rechargeable and suitable for all coat types.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4gapatl" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
       <p class="product-category">Cleaning</p>
       <h3 class="product-name">Nature's Miracle Urine Destroyer</h3>
       <p class="product-desc">Enzymatic formula that permanently eliminates pet urine stains and odours from carpets, floors and upholstery.</p>
@@ -732,246 +283,10 @@
       <a href="https://amzn.to/4ooxBDM" class="btn-amazon">View on Amazon →</a>
     </div>
 
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Bone Dry Pet Bath Towel</h3>
-      <p class="product-desc">Ultra absorbent microfibre pet towel. Dries your dog fast after baths and muddy walks. Machine washable.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4uKO0nD" class="btn-amazon">View on Amazon →</a>
-    </div>
+  </div>
 
-    <div class="product-card">
-      <p class="product-category">Toys</p>
-      <h3 class="product-name">Dog Chew Toys for Puppy Teething</h3>
-      <p class="product-desc">Safe, durable chew toys designed for teething puppies. Soothes sore gums and redirects chewing away from furniture.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/43muB0X" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Health</p>
-      <h3 class="product-name">Zesty Paws Omega Boost Salmon Oil</h3>
-      <p class="product-desc">Pure wild Alaskan salmon oil for dogs. Supports coat, skin, joints and immune health. Easy pump dispenser.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4gbnfF1" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Travel</p>
-      <h3 class="product-name">PETICON SUV Cargo Liner for Dogs</h3>
-      <p class="product-desc">Waterproof, scratch-proof cargo liner protects your boot from mud, hair and scratches. Non-slip backing stays in place.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4urs54E" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">BioSilk Dog Detangling Mist</h3>
-      <p class="product-desc">Silk protein detangling spray that smooths knots and adds shine. Safe for daily use on all coat types.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4v0R8wi" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Dog Poop Bag Holder</h3>
-      <p class="product-desc">Compact bag holder that clips to any lead. Always have bags ready on every walk. Compatible with standard roll bags.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4xkaKwY" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Accessories</p>
-      <h3 class="product-name">Airtag Dog Collar Holder</h3>
-      <p class="product-desc">Secure silicone holder attaches an Apple Airtag to any dog collar. Track your dog's location at all times.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/49PTSEr" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Travel</p>
-      <h3 class="product-name">Dog Car Seat Cover</h3>
-      <p class="product-desc">Waterproof, scratch-resistant seat cover protects your back seat from dog hair, mud and scratches on every journey.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4e1wDK6" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Dog Paw & Nose Balm with Coconut Oil</h3>
-      <p class="product-desc">Natural coconut oil balm soothes and heals cracked paw pads and dry nose. Safe to lick, no harsh chemicals.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/3SfCFy2" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Feeding</p>
-      <h3 class="product-name">Outward Hound Slow Feeder Bowl</h3>
-      <p class="product-desc">Fun puzzle design slows eating by up to 10x. Reduces bloating and digestive issues. Available in multiple sizes.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4ejPPlf" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Feeding</p>
-      <h3 class="product-name">Amazon Basics Silicone Pet Food Mat</h3>
-      <p class="product-desc">Waterproof silicone mat catches food and water spills around your dog's bowls. Non-slip, easy to clean.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Amazon's Choice</span>
-      </div>
-      <a href="https://amzn.to/4gcuhcx" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Dog Poo Bags with Handles</h3>
-      <p class="product-desc">Extra thick poo bags with easy-tie handles. Leak-proof and easy to carry. Essential for every dog walk.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4utvL5T" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Accessories</p>
-      <h3 class="product-name">Flexi Dog Accessory Multi Box</h3>
-      <p class="product-desc">Attaches directly to your Flexi lead. Stores treats, bags and small essentials on every walk. Hands-free convenience.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/3SvjBfg" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">ACE2ACE Pet Hair Remover</h3>
-      <p class="product-desc">Reusable self-cleaning lint roller removes pet hair from furniture, sofas and bedding. No sticky sheets needed.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">98,493+ reviews</span>
-        <span class="badge">Amazon's Choice</span>
-      </div>
-      <a href="https://amzn.to/4e9jqgV" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">DakPets Deshedding Dog Brush</h3>
-      <p class="product-desc">Removes up to 95% of loose hair and reduces shedding. Works on short and long coats. Ergonomic non-slip handle.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">52,388+ reviews</span>
-        <span class="badge">Amazon's Choice</span>
-      </div>
-      <a href="https://amzn.to/4uugTnU" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Feeding</p>
-      <h3 class="product-name">Outward Hound Fun Feeder Slo Bowl</h3>
-      <p class="product-desc">Maze design slows eating and provides mental stimulation at mealtime. Reduces bloating and regurgitation.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/3RPTdwC" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Dental</p>
-      <h3 class="product-name">GREENIES Canine Dental Treats</h3>
-      <p class="product-desc">Vet recommended dental chews that clean teeth, freshen breath and reduce tartar. Dogs love the taste.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/3RUYqmQ" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Rabbitgoo Dog Harness</h3>
-      <p class="product-desc">No-pull, no-choke harness with front and back leash clips. Adjustable, escape-proof and comfortable for all day wear.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4vbynq7" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Toys</p>
-      <h3 class="product-name">KONG Classic Dog Toy</h3>
-      <p class="product-desc">The original stuffable rubber toy. Fill with treats or peanut butter to keep dogs entertained for hours. Built to last.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">88,410+ reviews</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/4ohgio5" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">TUG 360° Retractable Dog Lead</h3>
-      <p class="product-desc">Tangle-free retractable lead with 360° swivel. Smooth one-hand brake and lock system. Suitable for dogs up to 50kg.</p>
-      <div class="product-meta">
-        <span class="stars">★★★★</span>
-        <span class="review-count">Top Rated</span>
-        <span class="badge">Top Rated</span>
-      </div>
-      <a href="https://amzn.to/43rK3c3" class="btn-amazon">View on Amazon →</a>
-    </div>
-
+  <div class="section-footer">
+    <a href="all-products.html#puppy" class="btn-browse">Browse All Puppy Products →</a>
   </div>
 </div>
 
@@ -981,7 +296,7 @@
 <div class="section" id="guides">
   <p class="section-label">Guides</p>
   <h2 class="section-title">Dog Owner Guides</h2>
-  <p class="section-sub">Honest, practical advice. Honest, practical advice for dog owners.</p>
+  <p class="section-sub">Honest, practical advice for dog owners.</p>
 
   <div class="article-grid">
 
@@ -1003,49 +318,47 @@
       <p class="article-excerpt">An unrestrained dog in a moving vehicle is a safety risk for everyone. Here's what you actually need and what's worth skipping.</p>
     </div>
 
-	<div class="article-card">
-  <p class="article-tag">Walking</p>
-  <a href="dog-poop-bags-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Poop Bags — Why Nearly 200,000 Dog Owners Choose Earth Rated</h3></a>
-  <p class="article-excerpt">Not all poop bags are equal. The difference between a good bag and a bad one becomes very clear the moment one fails mid-walk. Here's why Earth Rated leads the category.</p>
-</div>
+    <div class="article-card">
+      <p class="article-tag">Walking</p>
+      <a href="dog-poop-bags-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Poop Bags — Why Nearly 200,000 Dog Owners Choose Earth Rated</h3></a>
+      <p class="article-excerpt">Not all poop bags are equal. The difference between a good bag and a bad one becomes very clear the moment one fails mid-walk. Here's why Earth Rated leads the category.</p>
+    </div>
 
-	<div class="article-card">
-  <p class="article-tag">Toys</p>
-  <a href="kong-goodie-bone-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Chew Toy for Dogs — The KONG Goodie Bone Review</h3></a>
-  <p class="article-excerpt">Does your dog destroy every toy in minutes? The KONG Goodie Bone is built from natural rubber and designed to last. Here's why it's the most trusted chew toy on Amazon.</p>
-</div>
+    <div class="article-card">
+      <p class="article-tag">Toys</p>
+      <a href="kong-goodie-bone-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Chew Toy for Dogs — The KONG Goodie Bone Review</h3></a>
+      <p class="article-excerpt">Does your dog destroy every toy in minutes? The KONG Goodie Bone is built from natural rubber and designed to last. Here's why it's the most trusted chew toy on Amazon.</p>
+    </div>
 
-	<div class="article-card">
-  <p class="article-tag">Toys</p>
-  <a href="dog-puzzle-toy-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Puzzle Toy — Keep Your Dog's Brain Busy for Hours</h3></a>
-  <p class="article-excerpt">A bored dog is a destructive dog. Puzzle toys deliver the mental stimulation dogs need to stay calm, focused and out of trouble. Here's the best one on Amazon.</p>
-</div>
+    <div class="article-card">
+      <p class="article-tag">Toys</p>
+      <a href="dog-puzzle-toy-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Puzzle Toy — Keep Your Dog's Brain Busy for Hours</h3></a>
+      <p class="article-excerpt">A bored dog is a destructive dog. Puzzle toys deliver the mental stimulation dogs need to stay calm, focused and out of trouble. Here's the best one on Amazon.</p>
+    </div>
 
-	<div class="article-card">
-  <p class="article-tag">Anxiety & Enrichment</p>
-  <a href="lick-mat-dogs-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Lick Mat for Dogs — Calm Your Dog Down in Minutes</h3></a>
-  <p class="article-excerpt">Licking releases endorphins that naturally calm anxious dogs. Spread peanut butter on a lick mat and hand it over — it works almost immediately. Here's the best one on Amazon.</p>
-</div>
+    <div class="article-card">
+      <p class="article-tag">Anxiety & Enrichment</p>
+      <a href="lick-mat-dogs-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Lick Mat for Dogs — Calm Your Dog Down in Minutes</h3></a>
+      <p class="article-excerpt">Licking releases endorphins that naturally calm anxious dogs. Spread peanut butter on a lick mat and hand it over — it works almost immediately.</p>
+    </div>
 
-	<div class="article-card">
-  <p class="article-tag">Travel & Carrying</p>
-  <a href="dog-carrier-sling-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Carrier Sling — Keep Your Dog Close on Every Adventure</h3></a>
-  <p class="article-excerpt">Traditional carriers are bulky and leave you with one hand occupied. A dog sling keeps your small dog secure against your body with both hands completely free.</p>
-</div>
+    <div class="article-card">
+      <p class="article-tag">Travel & Carrying</p>
+      <a href="dog-carrier-sling-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Carrier Sling — Keep Your Dog Close on Every Adventure</h3></a>
+      <p class="article-excerpt">Traditional carriers are bulky and leave you with one hand occupied. A dog sling keeps your small dog secure against your body with both hands free.</p>
+    </div>
 
-	<div class="article-card">
-  <p class="article-tag">Grooming</p>
-  <a href="best-dog-wipes-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Wipes 2026 — For Paws, Body and Ears</h3></a>
-  <p class="article-excerpt">Not all dog wipes are the same. Body wipes, paw wipes and ear wipes serve different purposes. Here are the top rated picks for each job on Amazon.</p>
-</div>
+    <div class="article-card">
+      <p class="article-tag">Grooming</p>
+      <a href="best-dog-wipes-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Wipes 2026 — For Paws, Body and Ears</h3></a>
+      <p class="article-excerpt">Not all dog wipes are the same. Body wipes, paw wipes and ear wipes serve different purposes. Here are the top rated picks for each job on Amazon.</p>
+    </div>
 
-	<div class="article-card">
-  <p class="article-tag">Dental Care</p>
-  <a href="dog-dental-kit-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Toothbrush and Toothpaste — Arm & Hammer Dental Kit Review</h3></a>
-  <p class="article-excerpt">Dental disease affects 80% of dogs over 3 years old. Regular brushing prevents most of it. Here's the easiest kit to get started with on Amazon.</p>
-</div>
-
-	
+    <div class="article-card">
+      <p class="article-tag">Dental Care</p>
+      <a href="dog-dental-kit-guide.html" style="text-decoration:none; color:inherit;"><h3 class="article-title">Best Dog Toothbrush and Toothpaste — Arm & Hammer Dental Kit Review</h3></a>
+      <p class="article-excerpt">Dental disease affects 80% of dogs over 3 years old. Regular brushing prevents most of it. Here's the easiest kit to get started with on Amazon.</p>
+    </div>
 
   </div>
 </div>
@@ -1065,10 +378,7 @@
         <p class="product-category">Pantry</p>
         <h3 class="product-name">SONGMICS Cabinet Organiser Shelf</h3>
         <p class="product-desc">Double your shelf space instantly. Sturdy steel construction. Perfect for pantry, kitchen cabinets and bathroom storage.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
+        <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">Top Rated</span></div>
         <a href="https://amzn.to/4e0FmMA" class="btn-amazon">View on Amazon →</a>
       </div>
 
@@ -1076,10 +386,7 @@
         <p class="product-category">Meal Prep</p>
         <h3 class="product-name">MCIRCO Meal Prep Containers</h3>
         <p class="product-desc">Leak-proof, microwave and dishwasher safe. Portion-controlled compartments make weekly meal prep simple and organised.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
+        <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">Top Rated</span></div>
         <a href="https://amzn.to/4ogAMx0" class="btn-amazon">View on Amazon →</a>
       </div>
 
@@ -1087,134 +394,17 @@
         <p class="product-category">Fridge</p>
         <h3 class="product-name">Vtopmart Fridge Organiser Bins</h3>
         <p class="product-desc">Stackable, clear bins that transform a cluttered fridge into a clean, organised space. Easy to clean and built to last.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
+        <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">Top Rated</span></div>
         <a href="https://amzn.to/4eyLsDX" class="btn-amazon">View on Amazon →</a>
-      </div>
-	
-	<div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">OXO Good Grips 3-in-1 Avocado Slicer</h3>
-        <p class="product-desc">Split, pit and slice avocados safely in one tool. Dishwasher safe with a comfortable non-slip grip.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/4e9jqgV" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">Amazon Basics Digital Kitchen Scale</h3>
-        <p class="product-desc">Accurate digital scale with LCD display. Measures in grams, ounces, pounds and millilitres. Essential for meal prep.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/4uugTnU" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">Benriner Mandoline Slicer</h3>
-        <p class="product-desc">Japanese mandoline slicer for ultra-thin, precise cuts. Four interchangeable blades. Saves hours of prep time.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/3RPTdwC" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">OXO Good Grips Salad Spinner</h3>
-        <p class="product-desc">One-handed pump spins and drains salad leaves in seconds. Non-slip base, brake button and dishwasher safe bowl.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/3RUYqmQ" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">Tefal 5 Second Chopper</h3>
-        <p class="product-desc">Chops onions, herbs and vegetables in 5 seconds. No electricity needed. Easy to clean and compact to store.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/4vbynq7" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">ORBLUE Garlic Press Stainless Steel</h3>
-        <p class="product-desc">Heavy duty stainless steel garlic press. No peeling required. Dishwasher safe with a comfortable ergonomic handle.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/4ohgio5" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Baking</p>
-        <h3 class="product-name">Cuisinart Power Advantage Hand Mixer</h3>
-        <p class="product-desc">5-speed hand mixer with powerful motor. Includes beaters, dough hooks and whisk. Lightweight and easy to store.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/43rK3c3" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Pantry</p>
-        <h3 class="product-name">OXO Good Grips POP Cereal Dispenser</h3>
-        <p class="product-desc">Airtight cereal and dry goods dispenser with one-push button lid. Keeps food fresh and pantry looking organised.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/4gh6rfI" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Organisation</p>
-        <h3 class="product-name">Simple Houseware 2 Tier Pull Out Drawer</h3>
-        <p class="product-desc">Sliding pull-out drawer organiser for deep cabinets. Two tier design maximises storage. Easy to install, no tools needed.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/4fBUKAi" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Kitchen</p>
-        <h3 class="product-name">PUR Water Pitcher Filtration System</h3>
-        <p class="product-desc">Filters up to 40 gallons per filter. Reduces chlorine, lead and other contaminants. Slim design fits in most fridges.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
-        <a href="https://amzn.to/3RUgg9z" class="btn-amazon">View on Amazon →</a>
       </div>
 
       <div class="product-card">
         <p class="product-category">Organisation</p>
         <h3 class="product-name">NIIMBOT D110 Label Maker</h3>
         <p class="product-desc">Wireless mini label printer connects via Bluetooth. Print custom labels for pantry, fridge and storage. No ink needed.</p>
-        <div class="product-meta">
-          <span class="stars">★★★★</span>
-          <span class="review-count">Top Rated</span>
-        </div>
+        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
         <a href="https://amzn.to/4vJvFZ0" class="btn-amazon">View on Amazon →</a>
       </div>
-
 
     </div>
   </div>
@@ -1227,12 +417,11 @@
     <a href="#dog-essentials">Dog Essentials</a>
     <a href="#puppy">Puppy</a>
     <a href="#home-org">Home</a>
+    <a href="all-products.html">All Products</a>
   </div>
-
-<div style="margin: 16px 0;">
-  <a href="https://pinterest.com/everoxus" target="_blank" style="color: rgba(247,244,238,0.5); text-decoration: none; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s;">Follow us on Pinterest</a>
-</div>
-
+  <div style="margin: 16px 0;">
+    <a href="https://pinterest.com/everoxus" target="_blank" style="color: rgba(247,244,238,0.5); text-decoration: none; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s;">Follow us on Pinterest</a>
+  </div>
   <p class="footer-text">#ad · Everoxus is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon. We earn a small commission at no extra cost to you.</p>
 </footer>
 
