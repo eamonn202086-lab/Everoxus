@@ -1,21 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-
 <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A7353120-010e-4721-b5dd-a6b10c98fc551.js','script','impactStat',document,window);impactStat('transformLinks');impactStat('trackImpression');</script>
-
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QMT31L3V3V"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QMT31L3V3V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-QMT31L3V3V');
 </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>All Products — Everoxus</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
   :root { --navy: #1a2340; --cream: #f7f4ee; --warm-white: #fdfcfa; --accent: #c8a96e; --text: #2c2c2c; --muted: #6b6b6b; --light-border: #e8e3da; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -55,625 +54,92 @@
   .footer-links a { color: rgba(247,244,238,0.5); text-decoration: none; font-size: 0.78rem; margin: 0 12px; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
   .footer-links a:hover { color: var(--accent); }
   @media (max-width: 768px) { header { padding: 0 20px; } nav { display: none; } .page-hero { padding: 50px 20px; } .section { padding: 50px 20px; } .home-org { padding: 50px 20px; } footer { padding: 40px 20px; } }
+
+  /* --- List format (replaces grid product cards) --- */
+  .product-list { list-style: none; margin: 0; padding: 0; }
+  .product-row {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 16px 4px; border-top: 1px solid var(--light-border);
+  }
+  .product-list .product-row:last-child { border-bottom: 1px solid var(--light-border); }
+  .row-thumb {
+    flex: 0 0 52px; width: 52px; height: 52px; border-radius: 8px;
+    background: var(--cream); border: 1px solid var(--light-border);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif; color: var(--light-border); font-size: 1.3rem;
+  }
+  .row-body { flex: 1; min-width: 0; }
+  .row-category { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 3px; }
+  .row-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--navy); margin: 0 0 4px; line-height: 1.3; }
+  .row-meta { display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: var(--muted); margin-bottom: 4px; flex-wrap: wrap; }
+  .row-desc { font-size: 0.82rem; color: var(--muted); margin: 0 0 10px; line-height: 1.5; }
+  .row-btn {
+    display: inline-block; background: var(--navy); color: var(--cream); text-decoration: none;
+    padding: 9px 18px; border-radius: 3px; font-size: 0.76rem; font-weight: 500;
+    letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .row-btn:hover { background: var(--accent); color: var(--navy); }
+  @media (min-width: 640px) {
+    .product-row { align-items: center; }
+    .row-btn { margin-left: auto; flex-shrink: 0; }
+  }
 </style>
 </head>
 <body>
-
 <!-- HEADER -->
 <header>
-  <a href="index.html" class="logo">EVER<span>OXUS</span></a>
-  <nav>
-    <a href="index.html#dog-essentials">Dog Essentials</a>
-    <a href="index.html#puppy">Puppy</a>
-    <a href="index.html#guides">Guides</a>
-    <a href="index.html#home-org">Home</a>
-    <a href="all-products.html">All Products</a>
-  </nav>
+<a class="logo" href="index.html">EVER<span>OXUS</span></a>
+<nav>
+<a href="index.html#dog-essentials">Dog Essentials</a>
+<a href="index.html#puppy">Puppy</a>
+<a href="index.html#guides">Guides</a>
+<a href="index.html#home-org">Home</a>
+<a href="all-products.html">All Products</a>
+</nav>
 </header>
-
 <!-- PAGE HERO -->
 <div class="page-hero">
-  <p>Everoxus — Full Catalogue</p>
-  <h1>All Products</h1>
+<p>Everoxus — Full Catalogue</p>
+<h1>All Products</h1>
 </div>
-
 <!-- DOG ESSENTIALS -->
 <div class="section" id="dog-essentials">
-  <p class="section-label">Category</p>
-  <h2 class="section-title">Dog Essentials</h2>
-  <p class="section-sub">Every dog essential we've hand-picked. Minimum 4.4 stars, 1,000+ reviews.</p>
-
-  <div class="product-grid">
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">ACE2ACE Pet Hair Remover</h3>
-      <p class="product-desc">Reusable self-cleaning lint roller removes pet hair from furniture, sofas and bedding. No sticky sheets needed.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">98,493+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4e9jqgV" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Toys</p>
-      <h3 class="product-name">KONG Classic Dog Toy</h3>
-      <p class="product-desc">The original stuffable rubber toy. Fill with treats or peanut butter to keep dogs entertained for hours. Built to last.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">88,410+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4ohgio5" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">DakPets Deshedding Dog Brush</h3>
-      <p class="product-desc">Removes up to 95% of loose hair and reduces shedding. Works on short and long coats. Ergonomic non-slip handle.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">52,388+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4uugTnU" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Earth Rated Poop Bags</h3>
-      <p class="product-desc">Extra thick, leak-proof and lavender-scented. Makes every walk stress-free. The most reviewed poop bag on Amazon.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">47,000+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4x7VK5x" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Toys</p>
-      <h3 class="product-name">Multipet Lamb Chop Squeaker Toy</h3>
-      <p class="product-desc">A dog favourite for decades. Soft, plush and perfectly sized for cuddling and play. Dogs never want to put it down.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">32,000+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4xlCdOP" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Earth Rated Dog Wipes</h3>
-      <p class="product-desc">Large, thick lavender-scented wipes for paws and coat. Plant-based ingredients, free from parabens and alcohol.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">32,159+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3RZeK63" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Pogi's Dog Wipes</h3>
-      <p class="product-desc">Thick, fragrance-free wipes for paws, ears and coat. Gentle enough for daily use. Keep your dog clean between baths.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">28,000+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/3SxjZKf" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Training</p>
-      <h3 class="product-name">Luckyiren Dog Door Bells</h3>
-      <p class="product-desc">Hang on any door knob and teach your dog to ring when they need to go outside. Simple and effective training tool.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">23,362+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4uoUJ68" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">FURminator Deshedding Tool for Dogs</h3>
-      <p class="product-desc">Reaches through topcoat to remove loose undercoat hair before it sheds. Stainless steel edge and FURejector button.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">22,247+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/3S4fxm6" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Toys</p>
-      <h3 class="product-name">KONG Goodie Bone</h3>
-      <p class="product-desc">Natural rubber chew toy that keeps dogs mentally engaged for hours. Fill with treats for extra stimulation. Built to last.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">17,000+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4wxARQz" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Toys</p>
-      <h3 class="product-name">Dog Puzzle Toy — Food Feeder</h3>
-      <p class="product-desc">Interactive puzzle feeder for IQ training and mental stimulation. Sliding compartments hide treats for your dog to find.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">15,600+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4ofXaXj" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Feeding</p>
-      <h3 class="product-name">Amazon Basics Dog Bowl Mat</h3>
-      <p class="product-desc">Waterproof silicone mat catches spills and scattered kibble. Non-slip base. Keeps your floors clean at every mealtime.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">12,000+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4gcuhcx" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Dental</p>
-      <h3 class="product-name">Arm & Hammer Dog Dental Kit</h3>
-      <p class="product-desc">Complete tartar control kit with toothpaste, toothbrush and finger brush. Baking soda formula fights plaque and bad breath.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">8,112+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3QuGAXm" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Mini Lint Roller — 5 Pack</h3>
-      <p class="product-desc">Extra sticky lint rollers for pet hair on clothes, sofas and car seats. Travel size — keep one everywhere.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">7,000+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4e0B0oI" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Treats</p>
-      <h3 class="product-name">Vital Essentials Freeze Dried Treats</h3>
-      <p class="product-desc">Single ingredient raw beef liver treats. No fillers, no additives. Perfect for training and rewarding good behaviour.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">6,200+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4aDyXEG" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Feeding</p>
-      <h3 class="product-name">Zenify Slow Feeder Bowl</h3>
-      <p class="product-desc">Reduces bloating, choking and digestive issues. Puzzle design keeps dogs engaged at mealtime. Vet recommended.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">6,500+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4upI9Ug" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Palmer's Paw Pad & Nose Balm</h3>
-      <p class="product-desc">Fragrance-free cocoa butter balm softens rough, dry paw pads and nose. Safe for daily use. Made with Vitamin E.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">5,900+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/443FHbe" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Carrier</p>
-      <h3 class="product-name">Dog Carrier Sling</h3>
-      <p class="product-desc">Hands-free sling carrier for small dogs. Adjustable strap, soft and secure. Perfect for walks, travel, and errands.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">4,800+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4eeTEYL" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Car Safety</p>
-      <h3 class="product-name">BWOGUE Dog Seat Belt</h3>
-      <p class="product-desc">Adjustable dog seat belt harness. Clips directly to your car's seatbelt buckle. Keeps your dog safe on every journey.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">4,200+ reviews</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/43pO6FS" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Anxiety & Enrichment</p>
-      <h3 class="product-name">Honomastry Lick Mat — 2 Pack</h3>
-      <p class="product-desc">Premium silicone lick mat with suction cups. Calms anxious dogs, slows fast eaters, keeps bored dogs occupied.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">3,400+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4v3U7nV" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Travel</p>
-      <h3 class="product-name">Kurgo No Spill Dog Travel Bowl</h3>
-      <p class="product-desc">Splash-resistant silicone travel bowl keeps water in the bowl, not all over your car. 24oz capacity, perfect for road trips and hikes.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">2,602+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4omrvU7" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Kurgo Portable Dog Shower</h3>
-      <p class="product-desc">Screws onto any standard 2L bottle and turns it into a rinse station anywhere. Silicone bristles scrub and rinse at the same time.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">2,296+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4utxvvU" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">BioSilk Dog Detangling Mist</h3>
-      <p class="product-desc">Silk protein detangling spray that smooths knots and adds shine. Safe for daily use on all coat types.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3S11v4H" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">ChomChom Roller Pet Hair Remover</h3>
-      <p class="product-desc">Reusable, portable pet hair roller that picks up hair, lint and dander from furniture, bedding and clothing. No batteries needed.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">Top Rated</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4v3DYih" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">MAOCG Dog Grooming Scissors</h3>
-      <p class="product-desc">Professional grooming scissor set with rounded safety tips. Includes straight, curved and thinning shears for a salon finish at home.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4dYG253" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Travel</p>
-      <h3 class="product-name">Dog Water Bottle</h3>
-      <p class="product-desc">Portable water bottle with built-in drinking trough. One-button operation keeps your dog hydrated on walks, hikes and road trips.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3RXMbpG" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Beds & Comfort</p>
-      <h3 class="product-name">BFPETHOME Orthopedic Dog Bed</h3>
-      <p class="product-desc">Memory foam orthopedic dog bed with waterproof lining and removable washable cover. Ideal for older dogs and dogs with joint issues.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4oj6YzK" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Travel</p>
-      <h3 class="product-name">Devoted Doggy Car Seat</h3>
-      <p class="product-desc">Elevated booster car seat that lets your dog see out the window safely. Attaches to headrest with adjustable straps. Easy to clean.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4fwrjPX" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Beds & Comfort</p>
-      <h3 class="product-name">Luciphia Fleece Dog Blanket</h3>
-      <p class="product-desc">Super soft reversible fleece blanket for dogs. Warm, lightweight and machine washable. Perfect for the sofa, car or dog bed.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4uxe8C9" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Julius-K9 IDC Powerharness</h3>
-      <p class="product-desc">Heavy-duty, adjustable harness used by professionals worldwide. Reflective strap, easy-grip handle and interchangeable patches.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4edrOw1" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Bungee Dog Leash</h3>
-      <p class="product-desc">Shock-absorbing bungee leash reduces pulling strain on your arm and shoulder. Padded handle and traffic control loop.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4vDBK92" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Rabbitgoo Dog Harness</h3>
-      <p class="product-desc">No-pull, no-choke harness with front and back leash clips. Adjustable, escape-proof and comfortable for all day wear.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4vbynq7" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">TUG 360° Retractable Dog Lead</h3>
-      <p class="product-desc">Tangle-free retractable lead with 360° swivel. Smooth one-hand brake and lock system. Suitable for dogs up to 50kg.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/43rK3c3" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Amazon Basics Poop Bags</h3>
-      <p class="product-desc">Extra thick poo bags with easy-tie handles. Leak-proof and easy to carry. Essential for every dog walk.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3S261Qq" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Walking</p>
-      <h3 class="product-name">Dog Poop Bag Holder</h3>
-      <p class="product-desc">Compact bag holder that clips to any lead. Always have bags ready on every walk. Compatible with standard roll bags.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4xkaKwY" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Accessories</p>
-      <h3 class="product-name">Airtag Dog Collar Holder</h3>
-      <p class="product-desc">Secure silicone holder attaches an Apple Airtag to any dog collar. Track your dog's location at all times.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4vzmeLl" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Accessories</p>
-      <h3 class="product-name">Flexi Dog Accessory Multi Box</h3>
-      <p class="product-desc">Attaches directly to your Flexi lead. Stores treats, bags and small essentials on every walk. Hands-free convenience.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3SvjBfg" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Travel</p>
-      <h3 class="product-name">PETICON SUV Cargo Liner for Dogs</h3>
-      <p class="product-desc">Waterproof, scratch-proof cargo liner protects your boot from mud, hair and scratches. Non-slip backing stays in place.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4urs54E" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Travel</p>
-      <h3 class="product-name">Dog Car Seat Cover</h3>
-      <p class="product-desc">Waterproof, scratch-resistant seat cover protects your back seat from dog hair, mud and scratches on every journey.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4e1wDK6" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Pet MD Dog Ear Cleaner Wipes</h3>
-      <p class="product-desc">Vet recommended ear cleaning wipes. Removes wax and debris, reduces itching and odour. Gentle aloe vera formula.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">60,031+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4gbT2pj" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Dog Paw & Nose Balm with Coconut Oil</h3>
-      <p class="product-desc">Natural coconut oil balm soothes and heals cracked paw pads and dry nose. Safe to lick, no harsh chemicals.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3SfCFy2" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Feeding</p>
-      <h3 class="product-name">Outward Hound Slow Feeder Bowl</h3>
-      <p class="product-desc">Fun puzzle design slows eating by up to 10x. Reduces bloating and digestive issues. Available in multiple sizes.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4ejPPlf" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Feeding</p>
-      <h3 class="product-name">Outward Hound Fun Feeder Slo Bowl</h3>
-      <p class="product-desc">Maze design slows eating and provides mental stimulation at mealtime. Reduces bloating and regurgitation.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3RPTdwC" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Dental</p>
-      <h3 class="product-name">GREENIES Canine Dental Treats</h3>
-      <p class="product-desc">Vet recommended dental chews that clean teeth, freshen breath and reduce tartar. Dogs love the taste.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3RUYqmQ" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Training</p>
-      <h3 class="product-name">PET N PET Dog Treat Pouch</h3>
-      <p class="product-desc">Hands-free treat pouch with built-in poop bag dispenser. 3 ways to wear. Perfect for training walks.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">1,388+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4uoUGY0" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Health</p>
-      <h3 class="product-name">Zesty Paws Omega Boost Salmon Oil</h3>
-      <p class="product-desc">Pure wild Alaskan salmon oil for dogs. Supports coat, skin, joints and immune health. Easy pump dispenser.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4gbnfF1" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-  </div>
+<p class="section-label">Category</p>
+<h2 class="section-title">Dog Essentials</h2>
+<p class="section-sub">Every dog essential we've hand-picked. Minimum 4.4 stars, 1,000+ reviews.</p>
+<ul class="product-list"><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">ACE2ACE Pet Hair Remover</h3><div class="row-meta"><span>★★★★</span><span>98,493+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Reusable self-cleaning lint roller removes pet hair from furniture, sofas and bedding. No sticky sheets needed.</p></div><a class="row-btn" href="https://amzn.to/4e9jqgV" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Toys</p><h3 class="row-name">KONG Classic Dog Toy</h3><div class="row-meta"><span>★★★★</span><span>88,410+ reviews</span><span>Top Rated</span></div><p class="row-desc">The original stuffable rubber toy. Fill with treats or peanut butter to keep dogs entertained for hours. Built to last.</p></div><a class="row-btn" href="https://amzn.to/4ohgio5" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">DakPets Deshedding Dog Brush</h3><div class="row-meta"><span>★★★★</span><span>52,388+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Removes up to 95% of loose hair and reduces shedding. Works on short and long coats. Ergonomic non-slip handle.</p></div><a class="row-btn" href="https://amzn.to/4uugTnU" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Walking</p><h3 class="row-name">Earth Rated Poop Bags</h3><div class="row-meta"><span>★★★★★</span><span>47,000+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Extra thick, leak-proof and lavender-scented. Makes every walk stress-free. The most reviewed poop bag on Amazon.</p></div><a class="row-btn" href="https://amzn.to/4x7VK5x" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Toys</p><h3 class="row-name">Multipet Lamb Chop Squeaker Toy</h3><div class="row-meta"><span>★★★★★</span><span>32,000+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">A dog favourite for decades. Soft, plush and perfectly sized for cuddling and play. Dogs never want to put it down.</p></div><a class="row-btn" href="https://amzn.to/4xlCdOP" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">Earth Rated Dog Wipes</h3><div class="row-meta"><span>★★★★</span><span>32,159+ reviews</span><span>Top Rated</span></div><p class="row-desc">Large, thick lavender-scented wipes for paws and coat. Plant-based ingredients, free from parabens and alcohol.</p></div><a class="row-btn" href="https://amzn.to/3RZeK63" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">Pogi's Dog Wipes</h3><div class="row-meta"><span>★★★★★</span><span>28,000+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Thick, fragrance-free wipes for paws, ears and coat. Gentle enough for daily use. Keep your dog clean between baths.</p></div><a class="row-btn" href="https://amzn.to/3SxjZKf" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Training</p><h3 class="row-name">Luckyiren Dog Door Bells</h3><div class="row-meta"><span>★★★★</span><span>23,362+ reviews</span><span>Top Rated</span></div><p class="row-desc">Hang on any door knob and teach your dog to ring when they need to go outside. Simple and effective training tool.</p></div><a class="row-btn" href="https://amzn.to/4uoUJ68" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">FURminator Deshedding Tool for Dogs</h3><div class="row-meta"><span>★★★★★</span><span>22,247+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Reaches through topcoat to remove loose undercoat hair before it sheds. Stainless steel edge and FURejector button.</p></div><a class="row-btn" href="https://amzn.to/3S4fxm6" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Toys</p><h3 class="row-name">KONG Goodie Bone</h3><div class="row-meta"><span>★★★★★</span><span>17,000+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Natural rubber chew toy that keeps dogs mentally engaged for hours. Fill with treats for extra stimulation. Built to last.</p></div><a class="row-btn" href="https://amzn.to/4wxARQz" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Toys</p><h3 class="row-name">Dog Puzzle Toy — Food Feeder</h3><div class="row-meta"><span>★★★★</span><span>15,600+ reviews</span><span>Top Rated</span></div><p class="row-desc">Interactive puzzle feeder for IQ training and mental stimulation. Sliding compartments hide treats for your dog to find.</p></div><a class="row-btn" href="https://amzn.to/4ofXaXj" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Feeding</p><h3 class="row-name">Amazon Basics Dog Bowl Mat</h3><div class="row-meta"><span>★★★★★</span><span>12,000+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Waterproof silicone mat catches spills and scattered kibble. Non-slip base. Keeps your floors clean at every mealtime.</p></div><a class="row-btn" href="https://amzn.to/4gcuhcx" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Dental</p><h3 class="row-name">Arm &amp; Hammer Dog Dental Kit</h3><div class="row-meta"><span>★★★★</span><span>8,112+ reviews</span><span>Top Rated</span></div><p class="row-desc">Complete tartar control kit with toothpaste, toothbrush and finger brush. Baking soda formula fights plaque and bad breath.</p></div><a class="row-btn" href="https://amzn.to/3QuGAXm" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">Mini Lint Roller — 5 Pack</h3><div class="row-meta"><span>★★★★</span><span>7,000+ reviews</span><span>Top Rated</span></div><p class="row-desc">Extra sticky lint rollers for pet hair on clothes, sofas and car seats. Travel size — keep one everywhere.</p></div><a class="row-btn" href="https://amzn.to/4e0B0oI" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Treats</p><h3 class="row-name">Vital Essentials Freeze Dried Treats</h3><div class="row-meta"><span>★★★★</span><span>6,200+ reviews</span><span>Top Rated</span></div><p class="row-desc">Single ingredient raw beef liver treats. No fillers, no additives. Perfect for training and rewarding good behaviour.</p></div><a class="row-btn" href="https://amzn.to/4aDyXEG" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Feeding</p><h3 class="row-name">Zenify Slow Feeder Bowl</h3><div class="row-meta"><span>★★★★★</span><span>6,500+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Reduces bloating, choking and digestive issues. Puzzle design keeps dogs engaged at mealtime. Vet recommended.</p></div><a class="row-btn" href="https://amzn.to/4upI9Ug" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">Palmer's Paw Pad &amp; Nose Balm</h3><div class="row-meta"><span>★★★★</span><span>5,900+ reviews</span><span>Top Rated</span></div><p class="row-desc">Fragrance-free cocoa butter balm softens rough, dry paw pads and nose. Safe for daily use. Made with Vitamin E.</p></div><a class="row-btn" href="https://amzn.to/443FHbe" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Carrier</p><h3 class="row-name">Dog Carrier Sling</h3><div class="row-meta"><span>★★★★★</span><span>4,800+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Hands-free sling carrier for small dogs. Adjustable strap, soft and secure. Perfect for walks, travel, and errands.</p></div><a class="row-btn" href="https://amzn.to/4eeTEYL" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Car Safety</p><h3 class="row-name">BWOGUE Dog Seat Belt</h3><div class="row-meta"><span>★★★★★</span><span>4,200+ reviews</span><span>Amazon's Choice</span></div><p class="row-desc">Adjustable dog seat belt harness. Clips directly to your car's seatbelt buckle. Keeps your dog safe on every journey.</p></div><a class="row-btn" href="https://amzn.to/43pO6FS" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Anxiety &amp; Enrichment</p><h3 class="row-name">Honomastry Lick Mat — 2 Pack</h3><div class="row-meta"><span>★★★★</span><span>3,400+ reviews</span><span>Top Rated</span></div><p class="row-desc">Premium silicone lick mat with suction cups. Calms anxious dogs, slows fast eaters, keeps bored dogs occupied.</p></div><a class="row-btn" href="https://amzn.to/4v3U7nV" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Travel</p><h3 class="row-name">Kurgo No Spill Dog Travel Bowl</h3><div class="row-meta"><span>★★★★★</span><span>2,602+ reviews</span><span>Top Rated</span></div><p class="row-desc">Splash-resistant silicone travel bowl keeps water in the bowl, not all over your car. 24oz capacity, perfect for road trips and hikes.</p></div><a class="row-btn" href="https://amzn.to/4omrvU7" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">Kurgo Portable Dog Shower</h3><div class="row-meta"><span>★★★★★</span><span>2,296+ reviews</span><span>Top Rated</span></div><p class="row-desc">Screws onto any standard 2L bottle and turns it into a rinse station anywhere. Silicone bristles scrub and rinse at the same time.</p></div><a class="row-btn" href="https://amzn.to/4utxvvU" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">BioSilk Dog Detangling Mist</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Silk protein detangling spray that smooths knots and adds shine. Safe for daily use on all coat types.</p></div><a class="row-btn" href="https://amzn.to/3S11v4H" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">ChomChom Roller Pet Hair Remover</h3><div class="row-meta"><span>★★★★★</span><span>Top Rated</span><span>Amazon's Choice</span></div><p class="row-desc">Reusable, portable pet hair roller that picks up hair, lint and dander from furniture, bedding and clothing. No batteries needed.</p></div><a class="row-btn" href="https://amzn.to/4v3DYih" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">MAOCG Dog Grooming Scissors</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Professional grooming scissor set with rounded safety tips. Includes straight, curved and thinning shears for a salon finish at home.</p></div><a class="row-btn" href="https://amzn.to/4dYG253" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Travel</p><h3 class="row-name">Dog Water Bottle</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Portable water bottle with built-in drinking trough. One-button operation keeps your dog hydrated on walks, hikes and road trips.</p></div><a class="row-btn" href="https://amzn.to/3RXMbpG" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Beds &amp; Comfort</p><h3 class="row-name">BFPETHOME Orthopedic Dog Bed</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Memory foam orthopedic dog bed with waterproof lining and removable washable cover. Ideal for older dogs and dogs with joint issues.</p></div><a class="row-btn" href="https://amzn.to/4oj6YzK" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Travel</p><h3 class="row-name">Devoted Doggy Car Seat</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Elevated booster car seat that lets your dog see out the window safely. Attaches to headrest with adjustable straps. Easy to clean.</p></div><a class="row-btn" href="https://amzn.to/4fwrjPX" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Beds &amp; Comfort</p><h3 class="row-name">Luciphia Fleece Dog Blanket</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Super soft reversible fleece blanket for dogs. Warm, lightweight and machine washable. Perfect for the sofa, car or dog bed.</p></div><a class="row-btn" href="https://amzn.to/4uxe8C9" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Walking</p><h3 class="row-name">Julius-K9 IDC Powerharness</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Heavy-duty, adjustable harness used by professionals worldwide. Reflective strap, easy-grip handle and interchangeable patches.</p></div><a class="row-btn" href="https://amzn.to/4edrOw1" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Walking</p><h3 class="row-name">Bungee Dog Leash</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Shock-absorbing bungee leash reduces pulling strain on your arm and shoulder. Padded handle and traffic control loop.</p></div><a class="row-btn" href="https://amzn.to/4vDBK92" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Walking</p><h3 class="row-name">Rabbitgoo Dog Harness</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">No-pull, no-choke harness with front and back leash clips. Adjustable, escape-proof and comfortable for all day wear.</p></div><a class="row-btn" href="https://amzn.to/4vbynq7" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Walking</p><h3 class="row-name">TUG 360° Retractable Dog Lead</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Tangle-free retractable lead with 360° swivel. Smooth one-hand brake and lock system. Suitable for dogs up to 50kg.</p></div><a class="row-btn" href="https://amzn.to/43rK3c3" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Walking</p><h3 class="row-name">Amazon Basics Poop Bags</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Extra thick poo bags with easy-tie handles. Leak-proof and easy to carry. Essential for every dog walk.</p></div><a class="row-btn" href="https://amzn.to/3S261Qq" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Walking</p><h3 class="row-name">Dog Poop Bag Holder</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Compact bag holder that clips to any lead. Always have bags ready on every walk. Compatible with standard roll bags.</p></div><a class="row-btn" href="https://amzn.to/4xkaKwY" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Accessories</p><h3 class="row-name">Airtag Dog Collar Holder</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Secure silicone holder attaches an Apple Airtag to any dog collar. Track your dog's location at all times.</p></div><a class="row-btn" href="https://amzn.to/4vzmeLl" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Accessories</p><h3 class="row-name">Flexi Dog Accessory Multi Box</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Attaches directly to your Flexi lead. Stores treats, bags and small essentials on every walk. Hands-free convenience.</p></div><a class="row-btn" href="https://amzn.to/3SvjBfg" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Travel</p><h3 class="row-name">PETICON SUV Cargo Liner for Dogs</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Waterproof, scratch-proof cargo liner protects your boot from mud, hair and scratches. Non-slip backing stays in place.</p></div><a class="row-btn" href="https://amzn.to/4urs54E" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Travel</p><h3 class="row-name">Dog Car Seat Cover</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Waterproof, scratch-resistant seat cover protects your back seat from dog hair, mud and scratches on every journey.</p></div><a class="row-btn" href="https://amzn.to/4e1wDK6" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">Pet MD Dog Ear Cleaner Wipes</h3><div class="row-meta"><span>★★★★</span><span>60,031+ reviews</span><span>Top Rated</span></div><p class="row-desc">Vet recommended ear cleaning wipes. Removes wax and debris, reduces itching and odour. Gentle aloe vera formula.</p></div><a class="row-btn" href="https://amzn.to/4gbT2pj" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">Dog Paw &amp; Nose Balm with Coconut Oil</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Natural coconut oil balm soothes and heals cracked paw pads and dry nose. Safe to lick, no harsh chemicals.</p></div><a class="row-btn" href="https://amzn.to/3SfCFy2" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Feeding</p><h3 class="row-name">Outward Hound Slow Feeder Bowl</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Fun puzzle design slows eating by up to 10x. Reduces bloating and digestive issues. Available in multiple sizes.</p></div><a class="row-btn" href="https://amzn.to/4ejPPlf" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Feeding</p><h3 class="row-name">Outward Hound Fun Feeder Slo Bowl</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Maze design slows eating and provides mental stimulation at mealtime. Reduces bloating and regurgitation.</p></div><a class="row-btn" href="https://amzn.to/3RPTdwC" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Dental</p><h3 class="row-name">GREENIES Canine Dental Treats</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Vet recommended dental chews that clean teeth, freshen breath and reduce tartar. Dogs love the taste.</p></div><a class="row-btn" href="https://amzn.to/3RUYqmQ" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Training</p><h3 class="row-name">PET N PET Dog Treat Pouch</h3><div class="row-meta"><span>★★★★</span><span>1,388+ reviews</span><span>Top Rated</span></div><p class="row-desc">Hands-free treat pouch with built-in poop bag dispenser. 3 ways to wear. Perfect for training walks.</p></div><a class="row-btn" href="https://amzn.to/4uoUGY0" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Health</p><h3 class="row-name">Zesty Paws Omega Boost Salmon Oil</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Pure wild Alaskan salmon oil for dogs. Supports coat, skin, joints and immune health. Easy pump dispenser.</p></div><a class="row-btn" href="https://amzn.to/4gbnfF1" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li></ul>
 </div>
-
 <div class="divider"></div>
-
 <!-- PUPPY SECTION -->
 <div class="section" id="puppy">
-  <p class="section-label">Category</p>
-  <h2 class="section-title">Puppy Training</h2>
-  <p class="section-sub">Everything you need to get your puppy started right.</p>
-
-  <div class="product-grid">
-
-    <div class="product-card">
-      <p class="product-category">Training</p>
-      <h3 class="product-name">Super Absorbent Washable Pee Pads</h3>
-      <p class="product-desc">Reusable and washable. Super absorbent with non-slip backing. Better for the environment and your wallet long-term.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">1,000+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4rTxd04" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Containment</p>
-      <h3 class="product-name">X-ZONE Portable Pet Playpen</h3>
-      <p class="product-desc">Foldable and portable playpen for puppies. Set up in seconds. Keeps your puppy safe while you're busy.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">1,000+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/3PZleAD" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Hygiene</p>
-      <h3 class="product-name">CuteBone Female Dog Diapers</h3>
-      <p class="product-desc">Washable and reusable dog nappies. Comfortable fit with adjustable waistband. Ideal for puppies in training.</p>
-      <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">1,000+ reviews</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/47qnPtw" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Oneisall Dog Clippers</h3>
-      <p class="product-desc">Quiet, low-vibration dog clippers for home grooming. Cordless, rechargeable and suitable for all coat types.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4gapatl" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Cleaning</p>
-      <h3 class="product-name">Nature's Miracle Urine Destroyer</h3>
-      <p class="product-desc">Enzymatic formula that permanently eliminates pet urine stains and odours from carpets, floors and upholstery.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4vwOQVI" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Training</p>
-      <h3 class="product-name">Amazon Basics Dog Pee Pads</h3>
-      <p class="product-desc">Super absorbent, leak-proof pee pads with quick-dry surface. Essential for puppy training and senior dogs.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Amazon's Choice</span></div>
-      <a href="https://amzn.to/4ooxBDM" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Grooming</p>
-      <h3 class="product-name">Bone Dry Pet Bath Towel</h3>
-      <p class="product-desc">Ultra absorbent microfibre pet towel. Dries your dog fast after baths and muddy walks. Machine washable.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/4uKO0nD" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <p class="product-category">Toys</p>
-      <h3 class="product-name">Dog Chew Toys for Puppy Teething</h3>
-      <p class="product-desc">Safe, durable chew toys designed for teething puppies. Soothes sore gums and redirects chewing away from furniture.</p>
-      <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span><span class="badge">Top Rated</span></div>
-      <a href="https://amzn.to/43muB0X" class="btn-amazon">View on Amazon →</a>
-    </div>
-
-  </div>
+<p class="section-label">Category</p>
+<h2 class="section-title">Puppy Training</h2>
+<p class="section-sub">Everything you need to get your puppy started right.</p>
+<ul class="product-list"><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Training</p><h3 class="row-name">Super Absorbent Washable Pee Pads</h3><div class="row-meta"><span>★★★★★</span><span>1,000+ reviews</span><span>Top Rated</span></div><p class="row-desc">Reusable and washable. Super absorbent with non-slip backing. Better for the environment and your wallet long-term.</p></div><a class="row-btn" href="https://amzn.to/4rTxd04" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Containment</p><h3 class="row-name">X-ZONE Portable Pet Playpen</h3><div class="row-meta"><span>★★★★★</span><span>1,000+ reviews</span><span>Top Rated</span></div><p class="row-desc">Foldable and portable playpen for puppies. Set up in seconds. Keeps your puppy safe while you're busy.</p></div><a class="row-btn" href="https://amzn.to/3PZleAD" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Hygiene</p><h3 class="row-name">CuteBone Female Dog Diapers</h3><div class="row-meta"><span>★★★★★</span><span>1,000+ reviews</span><span>Top Rated</span></div><p class="row-desc">Washable and reusable dog nappies. Comfortable fit with adjustable waistband. Ideal for puppies in training.</p></div><a class="row-btn" href="https://amzn.to/47qnPtw" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">Oneisall Dog Clippers</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Quiet, low-vibration dog clippers for home grooming. Cordless, rechargeable and suitable for all coat types.</p></div><a class="row-btn" href="https://amzn.to/4gapatl" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Cleaning</p><h3 class="row-name">Nature's Miracle Urine Destroyer</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Enzymatic formula that permanently eliminates pet urine stains and odours from carpets, floors and upholstery.</p></div><a class="row-btn" href="https://amzn.to/4vwOQVI" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Training</p><h3 class="row-name">Amazon Basics Dog Pee Pads</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Amazon's Choice</span></div><p class="row-desc">Super absorbent, leak-proof pee pads with quick-dry surface. Essential for puppy training and senior dogs.</p></div><a class="row-btn" href="https://amzn.to/4ooxBDM" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Grooming</p><h3 class="row-name">Bone Dry Pet Bath Towel</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Ultra absorbent microfibre pet towel. Dries your dog fast after baths and muddy walks. Machine washable.</p></div><a class="row-btn" href="https://amzn.to/4uKO0nD" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Toys</p><h3 class="row-name">Dog Chew Toys for Puppy Teething</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span><span>Top Rated</span></div><p class="row-desc">Safe, durable chew toys designed for teething puppies. Soothes sore gums and redirects chewing away from furniture.</p></div><a class="row-btn" href="https://amzn.to/43muB0X" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li></ul>
 </div>
-
 <div class="divider"></div>
-
 <!-- HOME ORGANISATION -->
 <div class="home-org" id="home-org">
-  <div class="home-org-inner">
-    <p class="section-label">Also on Everoxus</p>
-    <h2 class="section-title">Home Organisation</h2>
-    <p class="section-sub">Kitchen, pantry, and meal prep picks. Highly rated, under $75.</p>
-
-    <div class="product-grid">
-
-      <div class="product-card">
-        <p class="product-category">Pantry</p>
-        <h3 class="product-name">SONGMICS Cabinet Organiser Shelf</h3>
-        <p class="product-desc">Double your shelf space instantly. Sturdy steel construction. Perfect for pantry, kitchen cabinets and bathroom storage.</p>
-        <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4e0FmMA" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">MCIRCO Meal Prep Containers</h3>
-        <p class="product-desc">Leak-proof, microwave and dishwasher safe. Portion-controlled compartments make weekly meal prep simple and organised.</p>
-        <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4ogAMx0" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Fridge</p>
-        <h3 class="product-name">Vtopmart Fridge Organiser Bins</h3>
-        <p class="product-desc">Stackable, clear bins that transform a cluttered fridge into a clean, organised space. Easy to clean and built to last.</p>
-        <div class="product-meta"><span class="stars">★★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4eyLsDX" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">OXO Good Grips 3-in-1 Avocado Slicer</h3>
-        <p class="product-desc">Split, pit and slice avocados safely in one tool. Dishwasher safe with a comfortable non-slip grip.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4e9jqgV" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">Amazon Basics Digital Kitchen Scale</h3>
-        <p class="product-desc">Accurate digital scale with LCD display. Measures in grams, ounces, pounds and millilitres. Essential for meal prep.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4uugTnU" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">Benriner Mandoline Slicer</h3>
-        <p class="product-desc">Japanese mandoline slicer for ultra-thin, precise cuts. Four interchangeable blades. Saves hours of prep time.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/3RPTdwC" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">OXO Good Grips Salad Spinner</h3>
-        <p class="product-desc">One-handed pump spins and drains salad leaves in seconds. Non-slip base, brake button and dishwasher safe bowl.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/3RUYqmQ" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">Tefal 5 Second Chopper</h3>
-        <p class="product-desc">Chops onions, herbs and vegetables in 5 seconds. No electricity needed. Easy to clean and compact to store.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4vbynq7" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Meal Prep</p>
-        <h3 class="product-name">ORBLUE Garlic Press Stainless Steel</h3>
-        <p class="product-desc">Heavy duty stainless steel garlic press. No peeling required. Dishwasher safe with a comfortable ergonomic handle.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4ohgio5" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Baking</p>
-        <h3 class="product-name">Cuisinart Power Advantage Hand Mixer</h3>
-        <p class="product-desc">5-speed hand mixer with powerful motor. Includes beaters, dough hooks and whisk. Lightweight and easy to store.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/43rK3c3" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Pantry</p>
-        <h3 class="product-name">OXO Good Grips POP Cereal Dispenser</h3>
-        <p class="product-desc">Airtight cereal and dry goods dispenser with one-push button lid. Keeps food fresh and pantry looking organised.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4gh6rfI" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Organisation</p>
-        <h3 class="product-name">Simple Houseware 2 Tier Pull Out Drawer</h3>
-        <p class="product-desc">Sliding pull-out drawer organiser for deep cabinets. Two tier design maximises storage. Easy to install, no tools needed.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4fBUKAi" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Kitchen</p>
-        <h3 class="product-name">PUR Water Pitcher Filtration System</h3>
-        <p class="product-desc">Filters up to 40 gallons per filter. Reduces chlorine, lead and other contaminants. Slim design fits in most fridges.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/3RUgg9z" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-      <div class="product-card">
-        <p class="product-category">Organisation</p>
-        <h3 class="product-name">NIIMBOT D110 Label Maker</h3>
-        <p class="product-desc">Wireless mini label printer connects via Bluetooth. Print custom labels for pantry, fridge and storage. No ink needed.</p>
-        <div class="product-meta"><span class="stars">★★★★</span><span class="review-count">Top Rated</span></div>
-        <a href="https://amzn.to/4vJvFZ0" class="btn-amazon">View on Amazon →</a>
-      </div>
-
-    </div>
-  </div>
+<div class="home-org-inner">
+<p class="section-label">Also on Everoxus</p>
+<h2 class="section-title">Home Organisation</h2>
+<p class="section-sub">Kitchen, pantry, and meal prep picks. Highly rated, under $75.</p>
+<ul class="product-list"><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Pantry</p><h3 class="row-name">SONGMICS Cabinet Organiser Shelf</h3><div class="row-meta"><span>★★★★★</span><span>Top Rated</span></div><p class="row-desc">Double your shelf space instantly. Sturdy steel construction. Perfect for pantry, kitchen cabinets and bathroom storage.</p></div><a class="row-btn" href="https://amzn.to/4e0FmMA" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Meal Prep</p><h3 class="row-name">MCIRCO Meal Prep Containers</h3><div class="row-meta"><span>★★★★★</span><span>Top Rated</span></div><p class="row-desc">Leak-proof, microwave and dishwasher safe. Portion-controlled compartments make weekly meal prep simple and organised.</p></div><a class="row-btn" href="https://amzn.to/4ogAMx0" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Fridge</p><h3 class="row-name">Vtopmart Fridge Organiser Bins</h3><div class="row-meta"><span>★★★★★</span><span>Top Rated</span></div><p class="row-desc">Stackable, clear bins that transform a cluttered fridge into a clean, organised space. Easy to clean and built to last.</p></div><a class="row-btn" href="https://amzn.to/4eyLsDX" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Meal Prep</p><h3 class="row-name">OXO Good Grips 3-in-1 Avocado Slicer</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">Split, pit and slice avocados safely in one tool. Dishwasher safe with a comfortable non-slip grip.</p></div><a class="row-btn" href="https://amzn.to/4e9jqgV" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Meal Prep</p><h3 class="row-name">Amazon Basics Digital Kitchen Scale</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">Accurate digital scale with LCD display. Measures in grams, ounces, pounds and millilitres. Essential for meal prep.</p></div><a class="row-btn" href="https://amzn.to/4uugTnU" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Meal Prep</p><h3 class="row-name">Benriner Mandoline Slicer</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">Japanese mandoline slicer for ultra-thin, precise cuts. Four interchangeable blades. Saves hours of prep time.</p></div><a class="row-btn" href="https://amzn.to/3RPTdwC" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Meal Prep</p><h3 class="row-name">OXO Good Grips Salad Spinner</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">One-handed pump spins and drains salad leaves in seconds. Non-slip base, brake button and dishwasher safe bowl.</p></div><a class="row-btn" href="https://amzn.to/3RUYqmQ" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Meal Prep</p><h3 class="row-name">Tefal 5 Second Chopper</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">Chops onions, herbs and vegetables in 5 seconds. No electricity needed. Easy to clean and compact to store.</p></div><a class="row-btn" href="https://amzn.to/4vbynq7" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Meal Prep</p><h3 class="row-name">ORBLUE Garlic Press Stainless Steel</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">Heavy duty stainless steel garlic press. No peeling required. Dishwasher safe with a comfortable ergonomic handle.</p></div><a class="row-btn" href="https://amzn.to/4ohgio5" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Baking</p><h3 class="row-name">Cuisinart Power Advantage Hand Mixer</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">5-speed hand mixer with powerful motor. Includes beaters, dough hooks and whisk. Lightweight and easy to store.</p></div><a class="row-btn" href="https://amzn.to/43rK3c3" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Pantry</p><h3 class="row-name">OXO Good Grips POP Cereal Dispenser</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">Airtight cereal and dry goods dispenser with one-push button lid. Keeps food fresh and pantry looking organised.</p></div><a class="row-btn" href="https://amzn.to/4gh6rfI" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Organisation</p><h3 class="row-name">Simple Houseware 2 Tier Pull Out Drawer</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">Sliding pull-out drawer organiser for deep cabinets. Two tier design maximises storage. Easy to install, no tools needed.</p></div><a class="row-btn" href="https://amzn.to/4fBUKAi" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Kitchen</p><h3 class="row-name">PUR Water Pitcher Filtration System</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">Filters up to 40 gallons per filter. Reduces chlorine, lead and other contaminants. Slim design fits in most fridges.</p></div><a class="row-btn" href="https://amzn.to/3RUgg9z" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li><li class="product-row"><div aria-hidden="true" class="row-thumb">+</div><div class="row-body"><p class="row-category">Organisation</p><h3 class="row-name">NIIMBOT D110 Label Maker</h3><div class="row-meta"><span>★★★★</span><span>Top Rated</span></div><p class="row-desc">Wireless mini label printer connects via Bluetooth. Print custom labels for pantry, fridge and storage. No ink needed.</p></div><a class="row-btn" href="https://amzn.to/4vJvFZ0" rel="nofollow sponsored noopener" target="_blank">View on Amazon →</a></li></ul>
 </div>
-
+</div>
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">EVER<span>OXUS</span></div>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="#dog-essentials">Dog Essentials</a>
-    <a href="#puppy">Puppy</a>
-    <a href="#home-org">Home Org</a>
-  </div>
-  <div style="margin: 16px 0;">
-    <a href="https://pinterest.com/everoxus" target="_blank" style="color: rgba(247,244,238,0.5); text-decoration: none; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;">Follow us on Pinterest</a>
-  </div>
-  <p class="footer-text">#ad · Everoxus is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon. We earn a small commission at no extra cost to you.</p>
+<div class="footer-logo">EVER<span>OXUS</span></div>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="#dog-essentials">Dog Essentials</a>
+<a href="#puppy">Puppy</a>
+<a href="#home-org">Home Org</a>
+</div>
+<div style="margin: 16px 0;">
+<a href="https://pinterest.com/everoxus" style="color: rgba(247,244,238,0.5); text-decoration: none; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;" target="_blank">Follow us on Pinterest</a>
+</div>
+<p class="footer-text">#ad · Everoxus is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon. We earn a small commission at no extra cost to you.</p>
 </footer>
-
 </body>
 </html>
