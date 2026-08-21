@@ -61,17 +61,29 @@
   .footer-logo span { color: var(--accent); }
   .footer-text { font-size: 0.78rem; color: rgba(247,244,238,0.4); max-width: 480px; margin: 0 auto; line-height: 1.7; font-weight: 300; }
   @media (max-width: 768px) { header { padding: 0 20px; } nav { display: none; } .article-hero { padding: 50px 20px; } .article-wrap { padding: 40px 20px; } footer { padding: 40px 20px; } }
+
+  .nav-toggle { display: none; background: none; border: none; color: var(--cream); font-size: 1.5rem; line-height: 1; cursor: pointer; padding: 6px 4px; }
+  @media (max-width: 768px) {
+    header { position: relative; }
+    .nav-toggle { display: block; }
+    nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 8px 20px 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
+    nav.nav-open { display: flex; }
+    nav a { margin-left: 0; padding: 10px 0; border-bottom: 1px solid rgba(247,244,238,0.1); }
+    nav a:last-child { border-bottom: none; }
+  }
 </style>
 </head>
 <body>
 
 <header>
   <a href="index.html" class="logo">EVER<span>OXUS</span></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('nav-open')">&#9776;</button>
   <nav>
     <a href="index.html#dog-essentials">Dog Essentials</a>
     <a href="index.html#puppy">Puppy</a>
     <a href="index.html#guides">Guides</a>
     <a href="index.html#home-org">Home</a>
+    <a href="all-products.html">All Products</a>
   </nav>
 </header>
 
@@ -114,7 +126,7 @@
     <h3>Dog Carrier Sling — Hands-Free Small Dog Carrier</h3>
     <div class="product-box-meta">
       <span class="stars">★★★★★</span>
-      <span class="review-count">4,800+ reviews · 4.8 stars</span>
+      <span class="review-count">3,396 reviews · 4.8 stars</span>
       <span class="badge">Amazon's Choice</span>
     </div>
     <p>This dog carrier sling features an adjustable strap that fits comfortably across the shoulder and chest, a soft quilted pouch that gives small dogs a secure and comfortable spot to sit or lie, and an open top design that lets your dog look out while staying safely contained. The adjustable strap means it works for a wide range of body sizes and can be worn on either shoulder. Light enough for all-day wear and compact enough to fold into a bag when not in use.</p>
@@ -146,7 +158,7 @@
   <div class="verdict">
     <p class="verdict-label">Our Verdict</p>
     <h3>The easiest way to take your small dog everywhere</h3>
-    <p>A dog carrier sling is one of those purchases that immediately becomes part of your daily routine. Hands-free, comfortable for both dog and owner, and genuinely practical for walks, errands, and travel. At 4.8 stars across nearly 5,000 reviews it's one of the most consistently loved small dog products on Amazon.</p>
+    <p>A dog carrier sling is one of those purchases that immediately becomes part of your daily routine. Hands-free, comfortable for both dog and owner, and genuinely practical for walks, errands, and travel. At 4.8 stars across over 3,000 reviews it's one of the most consistently loved small dog products on Amazon.</p>
   </div>
 
   <a href="https://amzn.to/4eeTEYL" class="btn-amazon">View on Amazon →</a>

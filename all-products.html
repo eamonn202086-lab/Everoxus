@@ -77,13 +77,24 @@
     .row-top { flex: 1; margin-bottom: 0; }
     .row-btn { width: auto; flex-shrink: 0; }
   }
+
+  .nav-toggle { display: none; background: none; border: none; color: var(--cream); font-size: 1.5rem; line-height: 1; cursor: pointer; padding: 6px 4px; }
+  @media (max-width: 768px) {
+    header { position: relative; }
+    .nav-toggle { display: block; }
+    nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 8px 20px 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
+    nav.nav-open { display: flex; }
+    nav a { margin-left: 0; padding: 10px 0; border-bottom: 1px solid rgba(247,244,238,0.1); }
+    nav a:last-child { border-bottom: none; }
+  }
 </style>
 </head>
 <body>
 <!-- HEADER -->
 <header>
 <a class="logo" href="index.html">EVER<span>OXUS</span></a>
-<nav>
+<button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('nav-open')">&#9776;</button>
+  <nav>
 <a href="index.html#dog-essentials">Dog Essentials</a>
 <a href="index.html#puppy">Puppy</a>
 <a href="index.html#guides">Guides</a>
