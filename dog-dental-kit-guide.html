@@ -72,13 +72,20 @@
     nav a { margin-left: 0; padding: 10px 0; border-bottom: 1px solid rgba(247,244,238,0.1); }
     nav a:last-child { border-bottom: none; }
   }
+
+  /* RELATED GUIDES */
+  .related-guides { margin: 48px 0 24px; padding-top: 28px; border-top: 1px solid var(--light-border); }
+  .related-guides .related-label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 12px; }
+  .related-guides ul { list-style: none; margin: 0; padding: 0; }
+  .related-guides a { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; color: var(--navy); text-decoration: none; }
+  .related-guides a:hover { color: var(--accent); }
 </style>
 </head>
 <body>
 
 <header>
   <a href="index.html" class="logo">EVER<span>OXUS</span></a>
-  <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('nav-open')">&#9776;</button>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.nextElementSibling.classList.toggle('nav-open'))">&#9776;</button>
   <nav>
     <a href="index.html#dog-essentials">Dog Essentials</a>
     <a href="index.html#puppy">Puppy</a>
@@ -123,12 +130,12 @@
     <p class="product-box-tag">Top Pick · 2026</p>
     <h3>Arm & Hammer Dog Dental Care Tartar Control Kit</h3>
     <div class="product-box-meta">
-      <span class="stars">★★★★½</span>
+      <span class="stars" role="img" aria-label="4.5 out of 5 stars">★★★★½</span>
       <span class="review-count">7,692 reviews · 4.5 stars</span>
       <span class="badge">Top Rated</span>
     </div>
     <p>The Arm & Hammer kit includes everything you need to start brushing your dog's teeth — a long-handled toothbrush, a finger brush, and enzymatic toothpaste. The toothpaste uses baking soda as its active ingredient — the same formula Arm & Hammer have used in human dental products for decades — which is proven to break down tartar and neutralise odour. The banana mint flavour is mild enough that most dogs accept it readily, which is the key factor that separates a usable dental kit from one that sits unused in a drawer.</p>
-    <a href="https://amzn.to/3QuGAXm" class="btn-amazon">View on Amazon →</a>
+    <a href="https://amzn.to/3QuGAXm" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
   </div>
 
   <h2>Alternative — Vet's Best Enzymatic Toothpaste Kit</h2>
@@ -137,12 +144,12 @@
     <p class="product-box-tag">Alternative Pick</p>
     <h3>Vet's Best Dog Toothbrush & Enzymatic Toothpaste Kit</h3>
     <div class="product-box-meta">
-      <span class="stars">★★★★☆</span>
+      <span class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span>
       <span class="review-count">48,243 reviews · 4.3 stars</span>
       <span class="badge">Top Rated</span>
     </div>
     <p>Vet's Best includes a toothbrush, finger brush, and enzymatic toothpaste made with natural ingredients, in a banana flavour most dogs accept without much resistance. With over 48,000 reviews it has a larger review base than the Arm & Hammer kit, though a slightly lower star average. A solid choice if you want a vet-formulated option specifically.</p>
-    <a href="https://link.amazon/B0ar255lf" class="btn-amazon">View on Amazon →</a>
+    <a href="https://link.amazon/B0ar255lf" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
   </div>
 
   <h3>How to introduce tooth brushing to your dog</h3>
@@ -170,24 +177,24 @@
     <p class="product-box-tag">No-Brushing Option</p>
     <h3>TropiClean Fresh Breath Oral Care Dog Gel</h3>
     <div class="product-box-meta">
-      <span class="stars">★★★★☆</span>
+      <span class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span>
       <span class="review-count">6,553 reviews · 4.4 stars</span>
       <span class="badge">Top Rated</span>
     </div>
     <p>Applied directly with no brushing required, TropiClean's gel helps remove plaque and tartar and is a reasonable fallback for dogs that won't accept a brush at all. It won't match the results of actual brushing, but it's meaningfully better than doing nothing.</p>
-    <a href="https://link.amazon/B01l0E02t" class="btn-amazon">View on Amazon →</a>
+    <a href="https://link.amazon/B01l0E02t" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
   </div>
 
   <div class="product-box">
     <p class="product-box-tag">Daily Chew Option</p>
     <h3>WHIMZEES Dental Dog Treats</h3>
     <div class="product-box-meta">
-      <span class="stars">★★★★★</span>
+      <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
       <span class="review-count">10,757 reviews · 4.6 stars</span>
       <span class="badge">Top Rated</span>
     </div>
     <p>A daily dental chew works well as a routine on-top of brushing, or as an easier-to-stick-with alternative if brushing and gels both fail to become a habit. WHIMZEES are natural, grain-free, and vegetarian, with no added sugar — the shape and chewing action help scrape plaque as your dog eats it.</p>
-    <a href="https://link.amazon/B0cWygZAn" class="btn-amazon">View on Amazon →</a>
+    <a href="https://link.amazon/B0cWygZAn" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
   </div>
 
   <div class="verdict">
@@ -196,7 +203,16 @@
     <p>Dental disease is the most common health problem in dogs and one of the most preventable. The Arm & Hammer kit gives you everything you need to start — a proven toothpaste formula, two brush types, and a flavour dogs actually accept. At 4.5 stars across over 7,600 reviews it's the most trusted dental kit on Amazon for good reason.</p>
   </div>
 
-  <a href="https://amzn.to/3QuGAXm" class="btn-amazon">View on Amazon →</a>
+  <a href="https://amzn.to/3QuGAXm" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
+
+  <aside class="related-guides" aria-label="Related guides">
+    <p class="related-label">Related guides</p>
+    <ul>
+      <li><a href="benebone-wishbone-vs-maplestick-guide.html">Benebone Wishbone vs Maplestick — Which One Does Your Dog Need?</a></li>
+      <li><a href="kong-goodie-bone-guide.html">Best Chew Toy for Dogs — The KONG Goodie Bone Review</a></li>
+      <li><a href="best-dog-wipes-guide.html">Best Dog Wipes — For Paws, Body and Ears</a></li>
+    </ul>
+  </aside>
 
   <p class="disclosure">#ad · Everoxus participates in the Amazon Associates Program. If you purchase through our links we earn a small commission at no extra cost to you. This does not influence our recommendations.</p>
 

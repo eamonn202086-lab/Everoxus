@@ -72,13 +72,20 @@
     nav a { margin-left: 0; padding: 10px 0; border-bottom: 1px solid rgba(247,244,238,0.1); }
     nav a:last-child { border-bottom: none; }
   }
+
+  /* RELATED GUIDES */
+  .related-guides { margin: 48px 0 24px; padding-top: 28px; border-top: 1px solid var(--light-border); }
+  .related-guides .related-label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 12px; }
+  .related-guides ul { list-style: none; margin: 0; padding: 0; }
+  .related-guides a { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; color: var(--navy); text-decoration: none; }
+  .related-guides a:hover { color: var(--accent); }
 </style>
 </head>
 <body>
 
 <header>
   <a href="index.html" class="logo">EVER<span>OXUS</span></a>
-  <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('nav-open')">&#9776;</button>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.nextElementSibling.classList.toggle('nav-open'))">&#9776;</button>
   <nav>
     <a href="index.html#dog-essentials">Dog Essentials</a>
     <a href="index.html#puppy">Puppy</a>
@@ -109,12 +116,12 @@
     <p class="product-box-tag">Top Pick · 2026</p>
     <h3>Flexi Dog Accessory Multi Box</h3>
     <div class="product-box-meta">
-      <span class="stars">★★★★☆</span>
+      <span class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span>
       <span class="review-count">12,528 reviews</span>
       <span class="badge">Top Rated</span>
     </div>
     <p>Attaches directly to your Flexi lead or standard leash, storing treats, bags, and small essentials within reach on every walk. The hands-free design means one less thing to juggle while managing an excited dog, a leash, and everything else a walk requires.</p>
-    <a href="https://link.amazon/B0iHTYDVJ" class="btn-amazon">View on Amazon →</a>
+    <a href="https://link.amazon/B0iHTYDVJ" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
   </div>
 
   <h3>Who this is genuinely useful for</h3>
@@ -135,7 +142,16 @@
     <p>This isn't a flashy product, but it solves a genuinely annoying, universal problem for a low price. Over 12,500 reviews suggest a lot of other dog owners agree it's worth having on every walk.</p>
   </div>
 
-  <a href="https://link.amazon/B0iHTYDVJ" class="btn-amazon">View on Amazon →</a>
+  <a href="https://link.amazon/B0iHTYDVJ" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
+
+  <aside class="related-guides" aria-label="Related guides">
+    <p class="related-label">Related guides</p>
+    <ul>
+      <li><a href="dog-poop-bags-guide.html">Best Dog Poop Bags — Why Nearly 150,000 Dog Owners Choose Earth Rated</a></li>
+      <li><a href="chuckit-fetch-gear-guide.html">Best Chuckit Fetch Gear — Ball, Stick or Launcher?</a></li>
+      <li><a href="dog-carrier-sling-guide.html">Best Dog Carrier Sling — Keep Your Dog Close on Every Adventure</a></li>
+    </ul>
+  </aside>
 
   <p class="disclosure">#ad · Everoxus participates in the Amazon Associates Program. If you purchase through our links we earn a small commission at no extra cost to you. This does not influence our recommendations.</p>
 

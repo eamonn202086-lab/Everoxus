@@ -58,7 +58,7 @@
 
 <header>
   <a href="index.html" class="logo">EVER<span>OXUS</span></a>
-  <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('nav-open')">&#9776;</button>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.nextElementSibling.classList.toggle('nav-open'))">&#9776;</button>
   <nav>
     <a href="index.html#dog-essentials">Dog Essentials</a>
     <a href="index.html#puppy">Puppy</a>

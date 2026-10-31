@@ -310,13 +310,20 @@
     nav a { margin-left: 0; padding: 10px 0; border-bottom: 1px solid rgba(247,244,238,0.1); }
     nav a:last-child { border-bottom: none; }
   }
+
+  /* RELATED GUIDES */
+  .related-guides { margin: 48px 0 24px; padding-top: 28px; border-top: 1px solid var(--light-border); }
+  .related-guides .related-label { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 12px; }
+  .related-guides ul { list-style: none; margin: 0; padding: 0; }
+  .related-guides a { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; color: var(--navy); text-decoration: none; }
+  .related-guides a:hover { color: var(--accent); }
 </style>
 </head>
 <body>
 
 <header>
   <a href="index.html" class="logo">EVER<span>OXUS</span></a>
-  <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('nav-open')">&#9776;</button>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.nextElementSibling.classList.toggle('nav-open'))">&#9776;</button>
   <nav>
     <a href="index.html#dog-essentials">Dog Essentials</a>
     <a href="index.html#puppy">Puppy</a>
@@ -372,12 +379,12 @@
     <p class="product-box-tag">Top Pick · 2026</p>
     <h3>Zenify Pets Dog Bowl Slow Feeder — Large 500ml</h3>
     <div class="product-box-meta">
-      <span class="stars">★★★★½</span>
+      <span class="stars" role="img" aria-label="4.5 out of 5 stars">★★★★½</span>
       <span class="review-count">1,451 reviews · 4.5 stars</span>
       <span class="badge">Top Rated</span>
     </div>
     <p>The Zenify Pets Slow Feeder Bowl ticks every box. The internal puzzle design slows eating by 5-10x compared to a standard bowl, the anti-skid grip base stays firmly in place on tile and hardwood floors, and it handles wet food, dry kibble, and raw food equally well. At 500ml it suits medium to large dogs and the light blue colour makes it easy to see how much food is remaining.</p>
-    <a href="https://amzn.to/4upI9Ug" class="btn-amazon">View on Amazon →</a>
+    <a href="https://amzn.to/4upI9Ug" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
   </div>
 
   <h3>What owners are saying</h3>
@@ -409,12 +416,12 @@
     <p class="product-box-tag">Alternative Pick</p>
     <h3>Outward Hound Fun Feeder Slow Feed Bowl</h3>
     <div class="product-box-meta">
-      <span class="stars">★★★★☆</span>
+      <span class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span>
       <span class="review-count">123,546 reviews</span>
       <span class="badge">Top Rated</span>
     </div>
     <p>A fun, maze-style puzzle design that slows eating by up to 10x, available across multiple sizes to better fit smaller dogs than the Zenify bowl above. Reduces bloating and digestive issues the same way — with a much larger review base if you want extra reassurance before buying.</p>
-    <a href="https://amzn.to/4ejPPlf" class="btn-amazon">View on Amazon →</a>
+    <a href="https://amzn.to/4ejPPlf" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
   </div>
 
   <div class="verdict">
@@ -423,7 +430,16 @@
     <p>If your dog eats too fast, the Zenify slow feeder bowl is one of the easiest and most affordable solutions on Amazon. It's a low-risk purchase that solves a genuine health issue. Over 1,400 dog owners agree it works.</p>
   </div>
 
-  <a href="https://amzn.to/4upI9Ug" class="btn-amazon">View on Amazon →</a>
+  <a href="https://amzn.to/4upI9Ug" class="btn-amazon" rel="nofollow sponsored noopener">View on Amazon →</a>
+
+  <aside class="related-guides" aria-label="Related guides">
+    <p class="related-label">Related guides</p>
+    <ul>
+      <li><a href="lick-mat-dogs-guide.html">Best Lick Mat for Dogs — Calm Your Dog Down in Minutes</a></li>
+      <li><a href="dog-puzzle-toy-guide.html">Best Dog Puzzle Toy — Keep Your Dog's Brain Busy for Hours</a></li>
+      <li><a href="dog-dental-kit-guide.html">Best Dog Toothbrush and Toothpaste — Arm &amp; Hammer Dental Kit Review</a></li>
+    </ul>
+  </aside>
 
   <p class="disclosure">#ad · Everoxus participates in the Amazon Associates Program. If you purchase through our links we earn a small commission at no extra cost to you. This does not influence our recommendations.</p>
 
